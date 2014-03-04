@@ -16,9 +16,8 @@ apply plugin: 'android'
 
 dependencies {
     compile fileTree(dir:'libs',include:'*.jar')
-    compile 'com.ning:async-http-client:+'
+    compile 'com.loopj.android:android-async-http:+'
     compile "com.android.support:support-v4:18.0.+"
-    compile 'com.squareup.retrofit:retrofit:1.4.1' // Information https://github.com/UweTrottmann/tmdb-java
 }
 
 task wrapper(type: Wrapper) {

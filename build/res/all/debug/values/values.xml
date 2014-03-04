@@ -5,6 +5,8 @@
     <eat-comment />
 
     <string name="app_name">Torrent-Movies</string>
+    <string name="drawer_close">Close menu</string>
+    <string name="drawer_open">Open menu</string>
     <string name="genre">Genre</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.PPinera.Torrent_Movies;
+package com.PPinera.Torrent_Movies.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import com.PPinera.Torrent_Movies.R;
 
 public class MenuAdapter extends BaseAdapter {
     private static String[] MOVIES_GENRES;
