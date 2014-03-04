@@ -3,10 +3,6 @@ box: wercker/android
 build:
   # The steps that will be executed on build
   steps:
-    - flenter/generate-version:
-        api_key: $VERSIONING_API_KEY
-        username: pepibumur
-        for_app: 6
     - script:
         name: show base information
         code: |
@@ -19,8 +15,3 @@ build:
         name: run gradle
         code: |
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
-deploy:
-  steps:
-    - script:
-        name: hockey upload
-        code:  bash scripts/hockey_upload.sh
