@@ -5,8 +5,6 @@
 # Expects an environment variable called HOCKEYAPP_TOKEN which is the API token
 if [[ "$UPLOAD_TO_HOCKEYAPP" == "1" ]]; then
       echo "Uploading to HockeyApp, could take a while..."
-      ls build/
-      ls build/apk
       curl \
           -F "status=$HA_STATUS_AVAILABLE_FOR_DOWNLOAD" \
           -F "notify=$HA_NOTIFY_NONE" \

@@ -33,10 +33,16 @@
                 qualifiers="" >
                 <string name="app_name" >Torrent-Movies
                 </string>
+                <string name="genre" >Genre
+                </string>
             </file>
+            <file
+                name="menu_genre_row"
+                path="/Users/pepibumur/Desktop/Torrent-Movies/res/layout/menu_genre_row.xml"
+                qualifiers=""
+                type="layout" />
         </source>
         <source path="/Users/pepibumur/Desktop/Torrent-Movies/build/res/rs/debug" />
-        <source path="/Users/pepibumur/Desktop/Torrent-Movies/build/res/generated/debug" />
     </dataSet>
     <dataSet config="debug" >
         <source path="/Users/pepibumur/Desktop/Torrent-Movies/build-types/debug/res" />
