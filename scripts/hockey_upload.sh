@@ -3,7 +3,9 @@
 # Use in Wercker to upload builds automatically to HockeyApp
 # Checks environment variable UPLOAD_TO_HOCKEYAPP=1, so you can have multiple tests on the "development" branch but only upload once.
 # Expects an environment variable called HOCKEYAPP_TOKEN which is the API token
-
+cd build
+cd apk
+ls
 if [[ "$UPLOAD_TO_HOCKEYAPP" == "1" ]]; then
       echo "Uploading to HockeyApp, could take a while..."
       curl \
