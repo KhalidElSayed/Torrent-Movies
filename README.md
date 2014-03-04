@@ -8,6 +8,7 @@ An Android application to watch torrent movies in your device.
 - [VideoLan](http://git.videolan.org/?p=vlc-ports/android.git;a=summary)
   _Information about VLC port_ https://wiki.videolan.org/AndroidCompile/
 - [AsyncHTTP](http://git.videolan.org/?p=vlc-ports/android.git;a=summary)
+- [TMDB Wrapper for Android] (https://github.com/UweTrottmann/tmdb-java)
 
 
 #### APIS
