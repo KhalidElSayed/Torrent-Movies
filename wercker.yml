@@ -15,3 +15,8 @@ build:
         name: run gradle
         code: |
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+deploy:
+  steps:
+    - script:
+        name: hockey upload
+        code:  bash scripts/hockey_upload.sh
