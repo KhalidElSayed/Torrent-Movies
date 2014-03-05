@@ -11,6 +11,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import com.PPinera.Torrent_Movies.Adapters.MenuAdapter;
 import com.PPinera.Torrent_Movies.R;
+import com.PPinera.Torrent_Movies.Web.MovieItem;
+import com.PPinera.Torrent_Movies.Web.YIFIClient;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends Activity {
@@ -25,6 +29,21 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
         setupDrawerLayout();
         setupActionBar();
+        test();
+    }
+
+    private void test(){
+        YIFIClient.getFilmsByGenre(new YIFIClient.filmsListHandler() {
+            @Override
+            public void onSuccessFilms(ArrayList<MovieItem> films) {
+
+            }
+
+            @Override
+            public void onErrorFilms(Throwable e) {
+
+            }
+        },"action");
     }
 
     private void setupDrawerLayout() {
