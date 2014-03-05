@@ -18,6 +18,7 @@ dependencies {
     compile fileTree(dir:'libs',include:'*.jar')
     compile 'com.loopj.android:android-async-http:+'
     compile "com.android.support:support-v4:18.0.+"
+    compile "com.nostra13.universalimageloader:universal-image-loader:+"
 }
 
 task wrapper(type: Wrapper) {

@@ -8,7 +8,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import com.PPinera.Torrent_Movies.Adapters.FilmsGridAdapter;
 import com.PPinera.Torrent_Movies.Adapters.MenuAdapter;
 import com.PPinera.Torrent_Movies.R;
 import com.PPinera.Torrent_Movies.Web.MovieItem;
@@ -21,7 +24,7 @@ public class MainActivity extends Activity {
     private DrawerLayout drawerLayout;
     private ListView drawerList;
     private ActionBarDrawerToggle drawerToggle;
-
+    private GridView gridview;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,21 +32,22 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
         setupDrawerLayout();
         setupActionBar();
-        test();
+        gridview = (GridView) findViewById(R.id.gridview);
     }
 
-    private void test(){
+    private void reloadGridWithGenre(String genre){
         YIFIClient.getFilmsByGenre(new YIFIClient.filmsListHandler() {
             @Override
             public void onSuccessFilms(ArrayList<MovieItem> films) {
-
+                FilmsGridAdapter adapter = new FilmsGridAdapter(MainActivity.this,films);
+                gridview.setAdapter(adapter);
             }
 
             @Override
             public void onErrorFilms(Throwable e) {
 
             }
-        },"action");
+        },genre);
     }
 
     private void setupDrawerLayout() {
@@ -80,6 +84,9 @@ public class MainActivity extends Activity {
         @Override
         public void onItemClick(AdapterView parent, View view, int position, long id) {
             selectItem(position);
+            gridview.setAdapter(null);
+            getActionBar().setTitle((String)parent.getItemAtPosition(position));
+            reloadGridWithGenre((String)parent.getItemAtPosition(position));
         }
     }
 

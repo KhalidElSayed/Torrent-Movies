@@ -8,7 +8,22 @@ android:layout_height="match_parent">
 <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/gridview"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:columnWidth="90dp"
+              android:numColumns="auto_fit"
+              android:verticalSpacing="10dp"
+              android:horizontalSpacing="10dp"
+              android:stretchMode="none"
+              android:gravity="center"
+              android:background="@android:color/background_light"
+            />
+
+</FrameLayout>
 <!-- The navigation drawer -->
 <ListView android:id="@+id/left_drawer"
           android:layout_width="240dp"

@@ -16,6 +16,7 @@ public class MovieItem {
     private long movieId;
     private String movieTitle;
     private String movieCover;
+    private String movieMiniCover;
     private float movieRating;
     private String movieUrl;
     private String movieYear;
@@ -69,6 +70,7 @@ public class MovieItem {
         try{ this.torrentMagnetUrl = object.getString("TorrentMagnetUrl"); }catch (Exception e){}
         try{ this.language = object.getString("Language"); }catch (Exception e){}
         try{ this.movieCover = object.getString("LargeCover"); }catch (Exception e){}
+        try{ this.movieMiniCover = object.getString("MediumCover"); }catch (Exception e){}
         try{ this.movieRuntime = object.getInt("MovieRuntime"); }catch (Exception e){}
         try{ this.youtubeTrailer = object.getString("YoutubeTrailerUrl"); }catch (Exception e){}
         try{ this.ageRating = object.getString("AgeRating"); }catch (Exception e){}
@@ -96,6 +98,13 @@ public class MovieItem {
 
     public long getMovieId(){
         return this.movieId;
+    }
+
+    public String getMovieCover(){
+        return this.movieCover;
+    }
+    public String getMovieMiniCover(){
+        return this.movieMiniCover;
     }
 
     /**
