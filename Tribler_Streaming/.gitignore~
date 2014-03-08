@@ -1,0 +1,5 @@
+bin/
+gen/
+obj/
+jni/libvlcjni.h
+.settings

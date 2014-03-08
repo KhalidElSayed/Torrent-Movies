@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 	<PreferenceCategory android:title="@string/session_settings" >
+        <EditTextPreference
+             android:title="@string/download"
+             android:summary="@string/download_sum"
+             android:key="downloadlim"
+             android:defaultValue="0"
+             android:inputType="number">
+        </EditTextPreference>
+        <EditTextPreference
+             android:title="@string/upload"
+             android:summary="@string/upload_sum"
+             android:key="upoadlim"
+             android:defaultValue="0"
+             android:inputType="number">
+        </EditTextPreference>
+        <EditTextPreference
+             android:title="@string/listenport"
+             android:summary="@string/listenport_sum"
+             android:key="listenport"
+             android:defaultValue="54321"
+             android:inputType="number">
+        </EditTextPreference>
+        <CheckBoxPreference
+                android:title="@string/security"
+                android:summary="@string/security_sum"
+                android:key="encryption"
+                android:defaultValue="false">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/extra_info" >
+        <CheckBoxPreference
+                android:title="@string/libtorrent_debug"
+                android:summary="@string/libtorrent_debug_summary"
+                android:key="libtorrent_debug"
+                android:defaultValue="true">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+   
+ 
+</PreferenceScreen>
