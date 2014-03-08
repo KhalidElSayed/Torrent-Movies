@@ -46,9 +46,25 @@ android {
             renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['jni']
         }
 
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
     }
+}
+
+// NDK Build http://www.armedpineapple.co.uk/2014/01/building-android-ndk-projects-with-gradle-and-travis-ci/
+import org.apache.tools.ant.taskdefs.condition.Os
+
+task ndkBuild(type: Exec) {
+    if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        commandLine 'ndk-build.cmd', '-j'
+    } else {
+        commandLine 'ndk-build', '-j'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    compileTask -> compileTask.dependsOn ndkBuild
 }
