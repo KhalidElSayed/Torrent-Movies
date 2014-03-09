@@ -57,6 +57,11 @@ android {
     }
 }
 
+task appStart(type: Exec, dependsOn: ':installDebug') {
+    commandLine 'adb', 'shell', 'am', 'start', '-n', 'com.PPinera.Torrent_Movies/.Activities.MainActivity'    
+}
+
+
 // NDK Build http://www.armedpineapple.co.uk/2014/01/building-android-ndk-projects-with-gradle-and-travis-ci/
 /*import org.apache.tools.ant.taskdefs.condition.Os
 
