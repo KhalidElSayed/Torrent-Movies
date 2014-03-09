@@ -16,6 +16,12 @@ An Android application to watch torrent movies in your device.
 - [TMDB](https://www.themoviedb.org/documentation/api)
 
 
+### Pending
+- [] Integrate NDK with VLC and LibTorrent
+- [] Connect torrent magnet URL with VLC and check if working
+- [] Detail view
+- [] Review grid view with images
+
 ## How to build Libtorrent
 ```
 Build Instructions Libtorrent
