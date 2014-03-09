@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/res" >
+            <file
+                name="wheel_bg"
+                path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/res/drawable/wheel_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="wheel_val"
+                path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/res/drawable/wheel_val.xml"
+                qualifiers=""
+                type="drawable" />
+        </source>
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/build/res/rs/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/src/release/res" />
+    </dataSet>
+
+</merger>

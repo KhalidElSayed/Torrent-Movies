@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/audio_browser_item_size" >
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="@dimen/audio_browser_item_size"
+            android:layout_height="@dimen/audio_browser_item_size"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cover"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textColor="@color/list_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="@string/artist"
+                android:textColor="@color/list_subtitle"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/item_more"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_footer" />
+
+</LinearLayout>

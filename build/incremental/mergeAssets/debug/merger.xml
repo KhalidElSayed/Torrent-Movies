@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merger>
 
+    <dataSet config="TorrentMoviesLibsWheelUnspecified.aar" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/build/exploded-bundles/TorrentMoviesLibsWheelUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="TorrentMoviesLibsSlidingmenuUnspecified.aar" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/build/exploded-bundles/TorrentMoviesLibsSlidingmenuUnspecified.aar/assets" />
+    </dataSet>
+    <dataSet config="TorrentMoviesLibsActionbarsherlockUnspecified.aar" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/build/exploded-bundles/TorrentMoviesLibsActionbarsherlockUnspecified.aar/assets" />
+    </dataSet>
     <dataSet config="main" >
         <source path="/Users/pepibumur/Desktop/Torrent-Movies/assets" />
     </dataSet>

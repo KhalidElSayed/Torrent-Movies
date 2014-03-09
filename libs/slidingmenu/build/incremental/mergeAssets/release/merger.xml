@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/slidingmenu/assets" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/slidingmenu/src/release/assets" />
+    </dataSet>
+
+</merger>

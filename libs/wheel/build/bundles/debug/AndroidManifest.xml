@@ -1,0 +1,6 @@
+<!-- From: file:/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="2.1" package="kankan.wheel">
+    <application android:label="Android Wheel Widget">
+</application>
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
+</manifest>

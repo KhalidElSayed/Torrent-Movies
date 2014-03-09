@@ -8,28 +8,4371 @@
 package com.PPinera.Torrent_Movies;
 
 public final class R {
+    public static final class anim {
+        public static final int anim_enter_bottom=0x7f040000;
+        public static final int anim_enter_left=0x7f040001;
+        public static final int anim_enter_right=0x7f040002;
+        public static final int anim_leave_bottom=0x7f040003;
+        public static final int anim_leave_left=0x7f040004;
+        public static final int anim_leave_right=0x7f040005;
+    }
+    public static final class array {
+        public static final int aouts=0x7f060000;
+        public static final int aouts_froyo=0x7f060001;
+        public static final int aouts_values=0x7f060002;
+        public static final int aouts_values_froyo=0x7f060003;
+        public static final int chroma_formats=0x7f060004;
+        public static final int chroma_formats_values=0x7f060005;
+        public static final int deblocking_list=0x7f060006;
+        public static final int deblocking_values=0x7f060007;
+        public static final int hardware_acceleration_list=0x7f060008;
+        public static final int hardware_acceleration_values=0x7f060009;
+        public static final int screen_orientation_list=0x7f06000a;
+        /**  9 ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT 
+         */
+        public static final int screen_orientation_values=0x7f06000b;
+        public static final int subtitles_encoding_list=0x7f06000c;
+        public static final int subtitles_encoding_values=0x7f06000d;
+        public static final int vouts=0x7f06000e;
+        public static final int vouts_froyo=0x7f06000f;
+        public static final int vouts_values=0x7f060010;
+        public static final int vouts_values_froyo=0x7f060011;
+    }
     public static final class attr {
+        /**  Custom divider drawable to use for elements in the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarDivider=0x7f010036;
+        /**  Custom item state list drawable background for action bar items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarItemBackground=0x7f010037;
+        /** 
+             Size of the Action Bar, including the contextual
+             bar used to present Action Modes.
+        
+         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
+</table>
+         */
+        public static final int actionBarSize=0x7f010035;
+        /** 
+             Reference to a style for the split Action Bar. This style
+             controls the split component that holds the menu/action
+             buttons. actionBarStyle is still used for the primary
+             bar.
+        
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarSplitStyle=0x7f010033;
+        /**  Reference to a style for the Action Bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarStyle=0x7f010032;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabBarStyle=0x7f01002f;
+        /**  Default style for tabs within an action bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabStyle=0x7f01002e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarTabTextStyle=0x7f010030;
+        /** 
+             Reference to a theme that should be used to inflate widgets
+             and layouts destined for the action bar. Most of the time
+             this will be a reference to the current theme, but when
+             the action bar has a significantly different contrast
+             profile than the rest of the activity the difference
+             can become important. If this is set to @null the current
+             theme will be used.
+        
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionBarWidgetTheme=0x7f010034;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionButtonStyle=0x7f010062;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionDropDownStyle=0x7f010061;
+        /** 
+             TextAppearance style that will be applied to text that
+             appears within action menu items.
+        
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionMenuTextAppearance=0x7f010038;
+        /**  Color for text that appears within action menu items. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int actionMenuTextColor=0x7f010039;
+        /**  Background drawable to use for action mode UI 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeBackground=0x7f01003c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCloseButtonStyle=0x7f01003b;
+        /**  Drawable to use for the close action mode button 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeCloseDrawable=0x7f01003e;
+        /**  PopupWindow style to use for action modes when showing as a window overlay. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModePopupWindowStyle=0x7f010040;
+        /**  Drawable to use for the Share action button in WebView selection action modes 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeShareDrawable=0x7f01003f;
+        /**  Background drawable to use for action mode UI in the lower split bar 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeSplitBackground=0x7f01003d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionModeStyle=0x7f01003a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionOverflowButtonStyle=0x7f010031;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int actionSpinnerItemStyle=0x7f010067;
+        /**  Drawable used as a background for activated items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int activatedBackgroundIndicator=0x7f01006f;
+        /**  Default ActivityChooserView style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int activityChooserViewStyle=0x7f01006e;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int background=0x7f010000;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int backgroundSplit=0x7f010001;
+        /**  Specifies a background drawable for a second stacked row of the action bar. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int backgroundStacked=0x7f01001b;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int background_menu=0x7f010002;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int background_menu_divider=0x7f010003;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int background_player=0x7f010004;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int background_playlist=0x7f010005;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behindOffset=0x7f010074;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behindScrollScale=0x7f010076;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behindWidth=0x7f010075;
+        /**  Small Button style. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int buttonStyleSmall=0x7f010041;
+        /**  Specifies a layout for custom navigation. Overrides navigationMode. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int customNavigationLayout=0x7f01001c;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int darkerorange=0x7f010006;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int darkorange=0x7f010007;
+        /**  Options affecting how the action bar is displayed. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
+</table>
+         */
+        public static final int displayOptions=0x7f010016;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int divider=0x7f010008;
+        /**  Drawable to use for generic vertical dividers. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dividerVertical=0x7f010060;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dropDownHintAppearance=0x7f010070;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int dropDownListViewStyle=0x7f010064;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dropdownListPreferredItemHeight=0x7f010066;
+        /** 
+             The drawable to show in the button for expanding the activities overflow popup.
+             <strong>Note:</strong> Clients would like to set this drawable
+             as a clue about the action the chosen activity will perform. For
+             example, if share activity is to be chosen the drawable should
+             give a clue that sharing is to be performed.
+        
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int expandActivityOverflowButtonDrawable=0x7f010023;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fadeDegree=0x7f01007c;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fadeEnabled=0x7f01007b;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int font_default=0x7f010009;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int font_light=0x7f01000a;
+        /**  Default background for the menu header. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int headerBackground=0x7f010027;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int height=0x7f01000b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int homeAsUpIndicator=0x7f010063;
+        /**  Specifies a layout to use for the "home" section of the action bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int homeLayout=0x7f01001d;
+        /**  Default horizontal divider between rows of menu items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int horizontalDivider=0x7f010025;
+        /**  Specifies the drawable used for the application icon. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int icon=0x7f010019;
+        /** 
+             The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked.
+        
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int iconifiedByDefault=0x7f01002c;
+        /**  Specifies a style resource to use for an indeterminate progress spinner. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int indeterminateProgressStyle=0x7f01001f;
+        /**  The maximal number of items initially shown in the activity list. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int initialActivityCount=0x7f010022;
+        /**  Default background for each menu item. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int itemBackground=0x7f010028;
+        /**  Default disabled icon alpha for each menu item that shows an icon. 
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemIconDisabledAlpha=0x7f01002a;
+        /** 
+             Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar.
+        
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemPadding=0x7f010021;
+        /**  Default appearance of menu item text. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int itemTextAppearance=0x7f010024;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int item_common_pressed=0x7f01000c;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int item_common_selected=0x7f01000d;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int item_divider=0x7f01000e;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int item_footer=0x7f01000f;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int listPopupWindowStyle=0x7f01006d;
+        /**  A smaller, sleeker list item height. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemHeightSmall=0x7f01005a;
+        /**  The preferred padding along the left edge of list items. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemPaddingLeft=0x7f01005b;
+        /**  The preferred padding along the right edge of list items. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int listPreferredItemPaddingRight=0x7f01005c;
+        /**  Specifies the drawable used for the application logo. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int logo=0x7f01001a;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int mode=0x7f010071;
+        /**  The type of navigation to use. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+</table>
+         */
+        public static final int navigationMode=0x7f010015;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int orange=0x7f010010;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int overhangSize=0x7f01007f;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int playlist_item_footer=0x7f010011;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int popupMenuStyle=0x7f010065;
+        /**  Whether space should be reserved in layout when an icon is missing. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int preserveIconSpacing=0x7f01002b;
+        /**  Specifies the horizontal padding on either end for an embedded progress bar. 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progressBarPadding=0x7f010020;
+        /**  Specifies a style resource to use for an embedded progress bar. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int progressBarStyle=0x7f01001e;
+        /**  An optional query hint string to be displayed in the empty query field. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int queryHint=0x7f01002d;
+        /**  SearchView AutoCompleteTextView style 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchAutoCompleteTextView=0x7f01004c;
+        /**  SearchView dropdown background 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchDropdownBackground=0x7f01004d;
+        /**  The list item height for search results. @hide 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int searchResultListItemHeight=0x7f010057;
+        /**  SearchView close button icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewCloseIcon=0x7f01004e;
+        /**  SearchView query refinement icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewEditQuery=0x7f010052;
+        /**  SearchView query refinement icon background 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewEditQueryBackground=0x7f010053;
+        /**  SearchView Go button icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewGoIcon=0x7f01004f;
+        /**  SearchView Search icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewSearchIcon=0x7f010050;
+        /**  SearchView text field background for the left section 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewTextField=0x7f010054;
+        /**  SearchView text field background for the right section 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewTextFieldRight=0x7f010055;
+        /**  SearchView Voice button icon 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int searchViewVoiceIcon=0x7f010051;
+        /**  Background drawable for standalone items that need focus/pressed states. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int selectableItemBackground=0x7f010042;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int selectorDrawable=0x7f01007e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selectorEnabled=0x7f01007d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int shadowDrawable=0x7f010079;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shadowWidth=0x7f01007a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spinnerDropDownItemStyle=0x7f01004b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spinnerItemStyle=0x7f01004a;
+        /**  Specifies subtitle text used for navigationMode="normal" 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int subtitle=0x7f010018;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int subtitleTextStyle=0x7f010012;
+        /**  Text color, typeface, size, and style for the text inside of a popup menu. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceLargePopupMenu=0x7f010044;
+        /**  The preferred TextAppearance for the primary text of small list items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceListItemSmall=0x7f01005d;
+        /**  Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSearchResultSubtitle=0x7f010059;
+        /**  Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSearchResultTitle=0x7f010058;
+        /**  Text color, typeface, size, and style for "small" text. Defaults to secondary text color. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSmall=0x7f010046;
+        /**  Text color, typeface, size, and style for small text inside of a popup menu. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textAppearanceSmallPopupMenu=0x7f010045;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColorPrimary=0x7f010047;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColorPrimaryDisableOnly=0x7f010048;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColorPrimaryInverse=0x7f010049;
+        /**  Text color for urls in search suggestions, used by things like global search and the browser. @hide 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int textColorSearchUrl=0x7f010056;
+        /**  Specifies title text used for navigationMode="normal" 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int title=0x7f010017;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int titleTextStyle=0x7f010013;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int touchModeAbove=0x7f010077;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int touchModeBehind=0x7f010078;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int transparent_gray=0x7f010014;
+        /**  Default vertical divider between menu items. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int verticalDivider=0x7f010026;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int viewAbove=0x7f010072;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int viewBehind=0x7f010073;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionBar=0x7f010069;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionBarOverlay=0x7f01006a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowActionModeOverlay=0x7f01006b;
+        /**  Default animations for the menu. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int windowAnimationStyle=0x7f010029;
+        /** 
+             This Drawable is overlaid over the foreground of the Window's content area, usually
+             to place a shadow below the title.
+        
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int windowContentOverlay=0x7f010043;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowMinWidthMajor=0x7f01005e;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowMinWidthMinor=0x7f01005f;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowNoTitle=0x7f010068;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int windowSplitActionBar=0x7f01006c;
+    }
+    public static final class bool {
+        public static final int abs__action_bar_embed_tabs=0x7f070000;
+        public static final int abs__action_bar_expanded_action_views_exclusive=0x7f070001;
+        public static final int abs__config_actionMenuItemAllCaps=0x7f070002;
+        public static final int abs__config_allowActionMenuItemTextWithIcon=0x7f070003;
+        public static final int abs__config_showMenuShortcutsWhenKeyboardPresent=0x7f070004;
+        public static final int abs__split_action_bar_is_narrow=0x7f070005;
+    }
+    public static final class color {
+        public static final int abs__background_holo_dark=0x7f080000;
+        public static final int abs__background_holo_light=0x7f080001;
+        public static final int abs__bright_foreground_disabled_holo_dark=0x7f080002;
+        public static final int abs__bright_foreground_disabled_holo_light=0x7f080003;
+        public static final int abs__bright_foreground_holo_dark=0x7f080004;
+        public static final int abs__bright_foreground_holo_light=0x7f080005;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f080018;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f080019;
+        public static final int abs__primary_text_holo_dark=0x7f08001a;
+        public static final int abs__primary_text_holo_light=0x7f08001b;
+        public static final int action_bar_title=0x7f080006;
+        public static final int background_common=0x7f080007;
+        public static final int background_menu=0x7f080008;
+        public static final int background_menu_divider=0x7f080009;
+        public static final int background_player=0x7f08000a;
+        public static final int background_playlist=0x7f08000b;
+        public static final int black=0x7f08000c;
+        public static final int darkerorange=0x7f08000d;
+        public static final int darkorange=0x7f08000e;
+        public static final int font_default=0x7f08000f;
+        public static final int font_light=0x7f080010;
+        public static final int item_common_pressed=0x7f080011;
+        public static final int item_common_selected=0x7f080012;
+        public static final int item_divider=0x7f080013;
+        public static final int item_footer=0x7f080014;
+        public static final int list_menu=0x7f08001c;
+        public static final int list_subtitle=0x7f08001d;
+        public static final int list_title=0x7f08001e;
+        public static final int list_title_last=0x7f08001f;
+        public static final int orange=0x7f080015;
+        public static final int playlist_item_footer=0x7f080016;
+        public static final int transparent_gray=0x7f080017;
+    }
+    public static final class dimen {
+        public static final int abs__action_bar_default_height=0x7f0a0000;
+        public static final int abs__action_bar_icon_vertical_padding=0x7f0a0001;
+        public static final int abs__action_bar_subtitle_bottom_margin=0x7f0a0002;
+        public static final int abs__action_bar_subtitle_text_size=0x7f0a0003;
+        public static final int abs__action_bar_subtitle_top_margin=0x7f0a0004;
+        public static final int abs__action_bar_title_text_size=0x7f0a0005;
+        public static final int abs__action_button_min_width=0x7f0a0006;
+        public static final int abs__config_prefDialogWidth=0x7f0a0007;
+        public static final int abs__dialog_min_width_major=0x7f0a0012;
+        public static final int abs__dialog_min_width_minor=0x7f0a0013;
+        public static final int abs__dropdownitem_icon_width=0x7f0a0008;
+        public static final int abs__dropdownitem_text_padding_left=0x7f0a0009;
+        public static final int abs__dropdownitem_text_padding_right=0x7f0a000a;
+        public static final int abs__search_view_preferred_width=0x7f0a000b;
+        public static final int abs__search_view_text_min_width=0x7f0a000c;
+        public static final int activity_horizontal_margin=0x7f0a000d;
+        public static final int activity_vertical_margin=0x7f0a000e;
+        public static final int audio_browser_item_size=0x7f0a000f;
+        public static final int shadow_width=0x7f0a0010;
+        public static final int widget_margin=0x7f0a0011;
     }
     public static final class drawable {
-        public static final int drawer_shadow=0x7f020000;
-        public static final int ic_drawer=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int a_lonely_place_for_dying=0x7f020000;
+        public static final int abs__ab_bottom_solid_dark_holo=0x7f020001;
+        public static final int abs__ab_bottom_solid_inverse_holo=0x7f020002;
+        public static final int abs__ab_bottom_solid_light_holo=0x7f020003;
+        public static final int abs__ab_bottom_transparent_dark_holo=0x7f020004;
+        public static final int abs__ab_bottom_transparent_light_holo=0x7f020005;
+        public static final int abs__ab_share_pack_holo_dark=0x7f020006;
+        public static final int abs__ab_share_pack_holo_light=0x7f020007;
+        public static final int abs__ab_solid_dark_holo=0x7f020008;
+        public static final int abs__ab_solid_light_holo=0x7f020009;
+        public static final int abs__ab_solid_shadow_holo=0x7f02000a;
+        public static final int abs__ab_stacked_solid_dark_holo=0x7f02000b;
+        public static final int abs__ab_stacked_solid_light_holo=0x7f02000c;
+        public static final int abs__ab_stacked_transparent_dark_holo=0x7f02000d;
+        public static final int abs__ab_stacked_transparent_light_holo=0x7f02000e;
+        public static final int abs__ab_transparent_dark_holo=0x7f02000f;
+        public static final int abs__ab_transparent_light_holo=0x7f020010;
+        public static final int abs__activated_background_holo_dark=0x7f020011;
+        public static final int abs__activated_background_holo_light=0x7f020012;
+        public static final int abs__btn_cab_done_default_holo_dark=0x7f020013;
+        public static final int abs__btn_cab_done_default_holo_light=0x7f020014;
+        public static final int abs__btn_cab_done_focused_holo_dark=0x7f020015;
+        public static final int abs__btn_cab_done_focused_holo_light=0x7f020016;
+        public static final int abs__btn_cab_done_holo_dark=0x7f020017;
+        public static final int abs__btn_cab_done_holo_light=0x7f020018;
+        public static final int abs__btn_cab_done_pressed_holo_dark=0x7f020019;
+        public static final int abs__btn_cab_done_pressed_holo_light=0x7f02001a;
+        public static final int abs__cab_background_bottom_holo_dark=0x7f02001b;
+        public static final int abs__cab_background_bottom_holo_light=0x7f02001c;
+        public static final int abs__cab_background_top_holo_dark=0x7f02001d;
+        public static final int abs__cab_background_top_holo_light=0x7f02001e;
+        public static final int abs__ic_ab_back_holo_dark=0x7f02001f;
+        public static final int abs__ic_ab_back_holo_light=0x7f020020;
+        public static final int abs__ic_cab_done_holo_dark=0x7f020021;
+        public static final int abs__ic_cab_done_holo_light=0x7f020022;
+        public static final int abs__ic_clear=0x7f020023;
+        public static final int abs__ic_clear_disabled=0x7f020024;
+        public static final int abs__ic_clear_holo_light=0x7f020025;
+        public static final int abs__ic_clear_normal=0x7f020026;
+        public static final int abs__ic_clear_search_api_disabled_holo_light=0x7f020027;
+        public static final int abs__ic_clear_search_api_holo_light=0x7f020028;
+        public static final int abs__ic_commit_search_api_holo_dark=0x7f020029;
+        public static final int abs__ic_commit_search_api_holo_light=0x7f02002a;
+        public static final int abs__ic_go=0x7f02002b;
+        public static final int abs__ic_go_search_api_holo_light=0x7f02002c;
+        public static final int abs__ic_menu_moreoverflow_holo_dark=0x7f02002d;
+        public static final int abs__ic_menu_moreoverflow_holo_light=0x7f02002e;
+        public static final int abs__ic_menu_moreoverflow_normal_holo_dark=0x7f02002f;
+        public static final int abs__ic_menu_moreoverflow_normal_holo_light=0x7f020030;
+        public static final int abs__ic_menu_share_holo_dark=0x7f020031;
+        public static final int abs__ic_menu_share_holo_light=0x7f020032;
+        public static final int abs__ic_search=0x7f020033;
+        public static final int abs__ic_search_api_holo_light=0x7f020034;
+        public static final int abs__ic_voice_search=0x7f020035;
+        public static final int abs__ic_voice_search_api_holo_light=0x7f020036;
+        public static final int abs__item_background_holo_dark=0x7f020037;
+        public static final int abs__item_background_holo_light=0x7f020038;
+        public static final int abs__list_activated_holo=0x7f020039;
+        public static final int abs__list_divider_holo_dark=0x7f02003a;
+        public static final int abs__list_divider_holo_light=0x7f02003b;
+        public static final int abs__list_focused_holo=0x7f02003c;
+        public static final int abs__list_longpressed_holo=0x7f02003d;
+        public static final int abs__list_pressed_holo_dark=0x7f02003e;
+        public static final int abs__list_pressed_holo_light=0x7f02003f;
+        public static final int abs__list_selector_background_transition_holo_dark=0x7f020040;
+        public static final int abs__list_selector_background_transition_holo_light=0x7f020041;
+        public static final int abs__list_selector_disabled_holo_dark=0x7f020042;
+        public static final int abs__list_selector_disabled_holo_light=0x7f020043;
+        public static final int abs__list_selector_holo_dark=0x7f020044;
+        public static final int abs__list_selector_holo_light=0x7f020045;
+        public static final int abs__menu_dropdown_panel_holo_dark=0x7f020046;
+        public static final int abs__menu_dropdown_panel_holo_light=0x7f020047;
+        public static final int abs__progress_bg_holo_dark=0x7f020048;
+        public static final int abs__progress_bg_holo_light=0x7f020049;
+        public static final int abs__progress_horizontal_holo_dark=0x7f02004a;
+        public static final int abs__progress_horizontal_holo_light=0x7f02004b;
+        public static final int abs__progress_medium_holo=0x7f02004c;
+        public static final int abs__progress_primary_holo_dark=0x7f02004d;
+        public static final int abs__progress_primary_holo_light=0x7f02004e;
+        public static final int abs__progress_secondary_holo_dark=0x7f02004f;
+        public static final int abs__progress_secondary_holo_light=0x7f020050;
+        public static final int abs__search_dropdown_dark=0x7f020051;
+        public static final int abs__search_dropdown_light=0x7f020052;
+        public static final int abs__spinner_48_inner_holo=0x7f020053;
+        public static final int abs__spinner_48_outer_holo=0x7f020054;
+        public static final int abs__spinner_ab_default_holo_dark=0x7f020055;
+        public static final int abs__spinner_ab_default_holo_light=0x7f020056;
+        public static final int abs__spinner_ab_disabled_holo_dark=0x7f020057;
+        public static final int abs__spinner_ab_disabled_holo_light=0x7f020058;
+        public static final int abs__spinner_ab_focused_holo_dark=0x7f020059;
+        public static final int abs__spinner_ab_focused_holo_light=0x7f02005a;
+        public static final int abs__spinner_ab_holo_dark=0x7f02005b;
+        public static final int abs__spinner_ab_holo_light=0x7f02005c;
+        public static final int abs__spinner_ab_pressed_holo_dark=0x7f02005d;
+        public static final int abs__spinner_ab_pressed_holo_light=0x7f02005e;
+        public static final int abs__tab_indicator_ab_holo=0x7f02005f;
+        public static final int abs__tab_selected_focused_holo=0x7f020060;
+        public static final int abs__tab_selected_holo=0x7f020061;
+        public static final int abs__tab_selected_pressed_holo=0x7f020062;
+        public static final int abs__tab_unselected_pressed_holo=0x7f020063;
+        public static final int abs__textfield_search_default_holo_dark=0x7f020064;
+        public static final int abs__textfield_search_default_holo_light=0x7f020065;
+        public static final int abs__textfield_search_right_default_holo_dark=0x7f020066;
+        public static final int abs__textfield_search_right_default_holo_light=0x7f020067;
+        public static final int abs__textfield_search_right_selected_holo_dark=0x7f020068;
+        public static final int abs__textfield_search_right_selected_holo_light=0x7f020069;
+        public static final int abs__textfield_search_selected_holo_dark=0x7f02006a;
+        public static final int abs__textfield_search_selected_holo_light=0x7f02006b;
+        public static final int abs__textfield_searchview_holo_dark=0x7f02006c;
+        public static final int abs__textfield_searchview_holo_light=0x7f02006d;
+        public static final int abs__textfield_searchview_right_holo_dark=0x7f02006e;
+        public static final int abs__textfield_searchview_right_holo_light=0x7f02006f;
+        public static final int abs__toast_frame=0x7f020070;
+        public static final int actionbar_background=0x7f020071;
+        public static final int actionbar_shadow=0x7f020072;
+        public static final int audio=0x7f020073;
+        public static final int audio_circle=0x7f020074;
+        public static final int audio_circle_normal=0x7f020075;
+        public static final int audio_circle_pressed=0x7f020076;
+        public static final int background=0x7f020077;
+        public static final int background_item=0x7f020078;
+        public static final int bg_with_shadow=0x7f020079;
+        public static final int cone=0x7f02007a;
+        public static final int crop_circle=0x7f02007b;
+        public static final int crop_circle_normal=0x7f02007c;
+        public static final int crop_circle_pressed=0x7f02007d;
+        public static final int dots=0x7f02007e;
+        public static final int dots_dark=0x7f02007f;
+        public static final int drawer_shadow=0x7f020080;
+        public static final int folder=0x7f020081;
+        public static final int gridview_progressbar=0x7f020082;
+        public static final int header_fadein_overlay=0x7f020083;
+        public static final int header_fadeout_overlay=0x7f020084;
+        public static final int header_icon_loupe=0x7f020085;
+        public static final int header_logo=0x7f020086;
+        public static final int ic_backward=0x7f020087;
+        public static final int ic_backward_glow=0x7f020088;
+        public static final int ic_backward_normal=0x7f020089;
+        public static final int ic_down=0x7f02008a;
+        public static final int ic_drawer=0x7f02008b;
+        public static final int ic_folder=0x7f02008c;
+        public static final int ic_forward=0x7f02008d;
+        public static final int ic_forward_glow=0x7f02008e;
+        public static final int ic_forward_normal=0x7f02008f;
+        public static final int ic_launcher=0x7f020090;
+        public static final int ic_menu_goto=0x7f020091;
+        public static final int ic_menu_refresh=0x7f020092;
+        public static final int ic_menu_revert=0x7f020093;
+        public static final int ic_menu_search=0x7f020094;
+        public static final int ic_move_media=0x7f020095;
+        public static final int ic_pause=0x7f020096;
+        public static final int ic_pause_glow=0x7f020097;
+        public static final int ic_pause_normal=0x7f020098;
+        public static final int ic_play=0x7f020099;
+        public static final int ic_play_glow=0x7f02009a;
+        public static final int ic_play_normal=0x7f02009b;
+        public static final int ic_playlist_switch=0x7f02009c;
+        public static final int ic_playlist_switch_glow=0x7f02009d;
+        public static final int ic_repeat=0x7f02009e;
+        public static final int ic_repeat_glow=0x7f02009f;
+        public static final int ic_repeat_one=0x7f0200a0;
+        public static final int ic_shuffle=0x7f0200a1;
+        public static final int ic_shuffle_glow=0x7f0200a2;
+        public static final int ic_stat_vlc=0x7f0200a3;
+        public static final int ic_stop=0x7f0200a4;
+        public static final int ic_stop_glow=0x7f0200a5;
+        public static final int ic_stop_normal=0x7f0200a6;
+        public static final int ic_up=0x7f0200a7;
+        public static final int icon=0x7f0200a8;
+        public static final int item_more=0x7f0200a9;
+        public static final int item_more_normal=0x7f0200aa;
+        public static final int item_more_pressed=0x7f0200ab;
+        public static final int lock=0x7f0200ac;
+        public static final int locked=0x7f0200ad;
+        public static final int pause_circle=0x7f0200ae;
+        public static final int pause_circle_normal=0x7f0200af;
+        public static final int pause_circle_pressed=0x7f0200b0;
+        public static final int play_circle=0x7f0200b1;
+        public static final int play_circle_normal=0x7f0200b2;
+        public static final int play_circle_pressed=0x7f0200b3;
+        public static final int po_seekbar=0x7f0200b4;
+        public static final int progress=0x7f0200b5;
+        public static final int progress_mini_player=0x7f0200b6;
+        public static final int seekbar_thumb=0x7f0200b7;
+        public static final int seekbar_thumb_normal=0x7f0200b8;
+        public static final int seekbar_thumb_pressed=0x7f0200b9;
+        public static final int sintel=0x7f0200ba;
+        public static final int sleep=0x7f0200bb;
+        public static final int slidingmenu_shadow=0x7f0200bc;
+        public static final int tab_indicator=0x7f0200bd;
+        public static final int tab_pressed=0x7f0200be;
+        public static final int tab_selected=0x7f0200bf;
+        public static final int tab_unselected=0x7f0200c0;
+        public static final int tears_of_steel=0x7f0200c1;
+        public static final int text_circle=0x7f0200c2;
+        public static final int text_circle_normal=0x7f0200c3;
+        public static final int text_circle_pressed=0x7f0200c4;
+        public static final int thumbnail=0x7f0200c5;
+        public static final int time=0x7f0200c6;
+        public static final int video=0x7f0200c7;
+        public static final int video_list_length_bg=0x7f0200c8;
+        public static final int wheel_bg=0x7f0200c9;
+        public static final int wheel_val=0x7f0200ca;
     }
     public static final class id {
-        public static final int content_frame=0x7f050001;
-        public static final int drawer_layout=0x7f050000;
-        public static final int genre_title=0x7f050004;
-        public static final int gridview=0x7f050002;
-        public static final int left_drawer=0x7f050003;
+        public static final int about_tabhost=0x7f090017;
+        public static final int abs__action_bar=0x7f09002d;
+        public static final int abs__action_bar_container=0x7f09002c;
+        public static final int abs__action_bar_subtitle=0x7f09001e;
+        public static final int abs__action_bar_title=0x7f09001d;
+        public static final int abs__action_context_bar=0x7f09002e;
+        public static final int abs__action_menu_divider=0x7f09000e;
+        public static final int abs__action_menu_presenter=0x7f09000f;
+        public static final int abs__action_mode_bar=0x7f090032;
+        public static final int abs__action_mode_bar_stub=0x7f090031;
+        public static final int abs__action_mode_close_button=0x7f090021;
+        public static final int abs__activity_chooser_view_content=0x7f090022;
+        public static final int abs__checkbox=0x7f090029;
+        public static final int abs__content=0x7f09002f;
+        public static final int abs__default_activity_button=0x7f090025;
+        public static final int abs__expand_activities_button=0x7f090023;
+        public static final int abs__home=0x7f090010;
+        public static final int abs__icon=0x7f090027;
+        public static final int abs__image=0x7f090024;
+        public static final int abs__imageButton=0x7f09001f;
+        public static final int abs__list_item=0x7f090026;
+        public static final int abs__progress_circular=0x7f090011;
+        public static final int abs__progress_horizontal=0x7f090012;
+        public static final int abs__radio=0x7f09002a;
+        public static final int abs__search_badge=0x7f090035;
+        public static final int abs__search_bar=0x7f090034;
+        public static final int abs__search_button=0x7f090036;
+        public static final int abs__search_close_btn=0x7f09003b;
+        public static final int abs__search_edit_frame=0x7f090037;
+        public static final int abs__search_go_btn=0x7f09003d;
+        public static final int abs__search_mag_icon=0x7f090038;
+        public static final int abs__search_plate=0x7f090039;
+        public static final int abs__search_src_text=0x7f09003a;
+        public static final int abs__search_voice_btn=0x7f09003e;
+        public static final int abs__shortcut=0x7f09002b;
+        public static final int abs__split_action_bar=0x7f090030;
+        public static final int abs__submit_area=0x7f09003c;
+        public static final int abs__textButton=0x7f090020;
+        public static final int abs__title=0x7f090028;
+        public static final int abs__up=0x7f090013;
+        public static final int add_subtitle=0x7f090049;
+        public static final int add_subtitle_divider=0x7f090048;
+        public static final int adv_function=0x7f090062;
+        public static final int advanced_layout=0x7f090047;
+        public static final int album=0x7f09009e;
+        public static final int albums=0x7f09004d;
+        public static final int albums_list=0x7f090055;
+        public static final int artist=0x7f09005e;
+        public static final int artists=0x7f090051;
+        public static final int artists_list=0x7f090054;
+        public static final int audio_list_browser_append=0x7f0900ce;
+        public static final int audio_list_browser_delete=0x7f0900d1;
+        public static final int audio_list_browser_play=0x7f0900cd;
+        public static final int audio_list_browser_play_all=0x7f0900d0;
+        public static final int audio_list_browser_set_song=0x7f0900d3;
+        public static final int audio_media_switcher=0x7f090060;
+        public static final int audio_player=0x7f0900cb;
+        public static final int audio_player_filling=0x7f0900ca;
+        public static final int audio_player_mini_remove=0x7f0900d4;
+        public static final int backward=0x7f09009f;
+        public static final int big_cover=0x7f090066;
+        public static final int browser_item_dir=0x7f090074;
+        public static final int browser_item_selected=0x7f090073;
+        public static final int buttons=0x7f090040;
+        public static final int cancel=0x7f09008e;
+        public static final int clear_log=0x7f090077;
+        public static final int colon=0x7f090085;
+        public static final int content=0x7f090053;
+        public static final int content_frame=0x7f090093;
+        public static final int copy_to_clipboard=0x7f090078;
+        public static final int cover=0x7f090059;
+        public static final int directory_view_append=0x7f0900d6;
+        public static final int directory_view_delete=0x7f0900d7;
+        public static final int directory_view_play=0x7f0900d5;
+        public static final int directory_view_play_audio=0x7f0900d8;
+        public static final int directory_view_play_video=0x7f0900d9;
+        public static final int disableHome=0x7f090008;
+        public static final int drawer_layout=0x7f090092;
+        public static final int dvi_icon=0x7f09007a;
+        public static final int edit_query=0x7f090033;
+        public static final int equalizer_band=0x7f090082;
+        public static final int equalizer_bands=0x7f090080;
+        public static final int equalizer_button=0x7f09007c;
+        public static final int equalizer_preamp=0x7f09007e;
+        public static final int equalizer_presets=0x7f09007d;
+        public static final int equalizer_scroll=0x7f09007f;
+        public static final int equalizer_seek=0x7f090081;
+        public static final int equalizer_value=0x7f090083;
+        public static final int errormsg=0x7f09009a;
+        public static final int fling_view_group=0x7f09004c;
+        public static final int footer=0x7f09005d;
+        public static final int forward=0x7f09009c;
+        public static final int fragment_placeholder=0x7f0900c6;
+        public static final int fullscreen=0x7f09000d;
+        public static final int genre_title=0x7f090098;
+        public static final int genres=0x7f090052;
+        public static final int genres_list=0x7f090057;
+        public static final int gridview=0x7f090094;
+        public static final int header=0x7f09004f;
+        public static final int header_layout=0x7f090050;
+        public static final int header_play_pause=0x7f090064;
+        public static final int header_time=0x7f090063;
+        public static final int hide=0x7f090091;
+        public static final int history_view_delete=0x7f0900db;
+        public static final int history_view_play=0x7f0900da;
+        public static final int homeAsUp=0x7f090005;
+        public static final int hour=0x7f090084;
+        public static final int icon=0x7f090089;
+        public static final int image=0x7f090096;
+        public static final int imageView1=0x7f090015;
+        public static final int info_layout=0x7f0900c7;
+        public static final int info_progress=0x7f0900c8;
+        public static final int info_text=0x7f0900c9;
+        public static final int item_expansion=0x7f090070;
+        public static final int item_more=0x7f09005c;
+        public static final int layout_flipper_loading=0x7f0900bf;
+        public static final int layout_footer=0x7f090072;
+        public static final int layout_item=0x7f090058;
+        public static final int left=0x7f09000a;
+        public static final int left_drawer=0x7f090095;
+        public static final int length=0x7f090069;
+        public static final int libtorrent_debug=0x7f0900b9;
+        public static final int libtorrent_loading=0x7f0900b5;
+        public static final int libtorrent_progress_percentage=0x7f0900b8;
+        public static final int libtorrent_progress_text=0x7f0900b7;
+        public static final int libtorrent_progressbar=0x7f0900b6;
+        public static final int listMode=0x7f090001;
+        public static final int lock_overlay_button=0x7f0900ae;
+        public static final int logo=0x7f090019;
+        public static final int magnet_img_1=0x7f090044;
+        public static final int magnet_img_2=0x7f090045;
+        public static final int magnet_img_3=0x7f090046;
+        public static final int magnet_search_buttton=0x7f090041;
+        public static final int main_compiled=0x7f09001c;
+        public static final int main_link=0x7f09001a;
+        public static final int main_revision=0x7f09001b;
+        public static final int margin=0x7f09000c;
+        public static final int message=0x7f090099;
+        public static final int min=0x7f090086;
+        public static final int ml_item_layout_thumbnail=0x7f0900c4;
+        public static final int ml_item_progress=0x7f0900c1;
+        public static final int ml_item_subtitle=0x7f0900c3;
+        public static final int ml_item_thumbnail=0x7f0900c0;
+        public static final int ml_item_title=0x7f0900c2;
+        public static final int ml_menu_about=0x7f0900e5;
+        public static final int ml_menu_equalizer=0x7f0900e3;
+        public static final int ml_menu_last_playlist=0x7f0900e1;
+        public static final int ml_menu_open_mrl=0x7f0900dd;
+        public static final int ml_menu_preferences=0x7f0900e4;
+        public static final int ml_menu_refresh=0x7f0900e2;
+        public static final int ml_menu_search=0x7f0900dc;
+        public static final int ml_menu_sortby=0x7f0900de;
+        public static final int ml_menu_sortby_length=0x7f0900e0;
+        public static final int ml_menu_sortby_name=0x7f0900df;
+        public static final int more=0x7f09008a;
+        public static final int move=0x7f090071;
+        public static final int next=0x7f09006d;
+        public static final int normal=0x7f090000;
+        public static final int not_show_again=0x7f090090;
+        public static final int ok=0x7f090088;
+        public static final int option_overlay=0x7f0900a9;
+        public static final int pane=0x7f0900c5;
+        public static final int phone_only=0x7f0900d2;
+        public static final int play=0x7f090097;
+        public static final int play_pause=0x7f09006c;
+        public static final int player_overlay_adv_function=0x7f0900b4;
+        public static final int player_overlay_audio=0x7f0900ac;
+        public static final int player_overlay_backward=0x7f0900af;
+        public static final int player_overlay_battery=0x7f0900a7;
+        public static final int player_overlay_forward=0x7f0900b3;
+        public static final int player_overlay_header=0x7f0900a5;
+        public static final int player_overlay_info=0x7f0900a4;
+        public static final int player_overlay_length=0x7f0900b2;
+        public static final int player_overlay_play=0x7f0900a3;
+        public static final int player_overlay_seekbar=0x7f0900b1;
+        public static final int player_overlay_size=0x7f0900ad;
+        public static final int player_overlay_subtitle=0x7f0900ab;
+        public static final int player_overlay_systime=0x7f0900a8;
+        public static final int player_overlay_time=0x7f0900b0;
+        public static final int player_overlay_title=0x7f0900a6;
+        public static final int player_surface=0x7f0900a1;
+        public static final int player_surface_frame=0x7f0900a0;
+        public static final int playlist_item=0x7f09006f;
+        public static final int playlist_switch=0x7f090061;
+        public static final int poster_buttons=0x7f090043;
+        public static final int previous=0x7f09006b;
+        public static final int progressBar=0x7f09005f;
+        public static final int progress_overlay=0x7f0900aa;
+        public static final int relative_layout=0x7f09008c;
+        public static final int repeat=0x7f09006e;
+        public static final int reset=0x7f09008d;
+        public static final int right=0x7f09000b;
+        public static final int scrollView1=0x7f09008f;
+        public static final int search_clear_history=0x7f0900e6;
+        public static final int search_text=0x7f0900ba;
+        public static final int sec=0x7f090087;
+        public static final int selected_view=0x7f090014;
+        public static final int showCustom=0x7f090007;
+        public static final int showHome=0x7f090004;
+        public static final int showTitle=0x7f090006;
+        public static final int show_debug=0x7f09004b;
+        public static final int show_debug_divider=0x7f09004a;
+        public static final int shuffle=0x7f09006a;
+        public static final int sliding_menu=0x7f0900bb;
+        public static final int slidingmenumain=0x7f0900bc;
+        public static final int songName=0x7f09009b;
+        public static final int songs=0x7f09004e;
+        public static final int songs_list=0x7f090056;
+        public static final int songs_view_only=0x7f0900cf;
+        public static final int speed_seek_bar=0x7f09008b;
+        public static final int start_log=0x7f090075;
+        public static final int stop=0x7f09009d;
+        public static final int stop_log=0x7f090076;
+        public static final int subtitle=0x7f09005b;
+        public static final int subtitles_surface=0x7f0900a2;
+        public static final int tabMode=0x7f090002;
+        public static final int text=0x7f09007b;
+        public static final int textView=0x7f0900bd;
+        public static final int textViewVersion=0x7f090016;
+        public static final int textview=0x7f090079;
+        public static final int textview_nomedia=0x7f0900be;
+        public static final int time=0x7f090067;
+        public static final int timeline=0x7f090068;
+        public static final int timeline_parent=0x7f0900cc;
+        public static final int title=0x7f09005a;
+        public static final int torrent_settings_menu=0x7f0900e7;
+        public static final int torrentselect_buttton=0x7f090042;
+        public static final int torrentselect_text=0x7f09003f;
+        public static final int useLogo=0x7f090003;
+        public static final int video_list_delete=0x7f0900ec;
+        public static final int video_list_info=0x7f0900eb;
+        public static final int video_list_play=0x7f0900e8;
+        public static final int video_list_play_audio=0x7f0900ea;
+        public static final int video_list_play_from_start=0x7f0900e9;
+        public static final int view_switcher=0x7f090065;
+        public static final int webview=0x7f090018;
+        public static final int wrap_content=0x7f090009;
+    }
+    public static final class integer {
+        public static final int abs__max_action_buttons=0x7f0b0000;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int menu_genre_row=0x7f030001;
+        public static final int about=0x7f030000;
+        public static final int about_licence=0x7f030001;
+        public static final int about_main=0x7f030002;
+        public static final int abs__action_bar_home=0x7f030003;
+        public static final int abs__action_bar_tab=0x7f030004;
+        public static final int abs__action_bar_tab_bar_view=0x7f030005;
+        public static final int abs__action_bar_title_item=0x7f030006;
+        public static final int abs__action_menu_item_layout=0x7f030007;
+        public static final int abs__action_menu_layout=0x7f030008;
+        public static final int abs__action_mode_bar=0x7f030009;
+        public static final int abs__action_mode_close_item=0x7f03000a;
+        public static final int abs__activity_chooser_view=0x7f03000b;
+        public static final int abs__activity_chooser_view_list_item=0x7f03000c;
+        public static final int abs__list_menu_item_checkbox=0x7f03000d;
+        public static final int abs__list_menu_item_icon=0x7f03000e;
+        public static final int abs__list_menu_item_radio=0x7f03000f;
+        public static final int abs__popup_menu_item_layout=0x7f030010;
+        public static final int abs__screen_action_bar=0x7f030011;
+        public static final int abs__screen_action_bar_overlay=0x7f030012;
+        public static final int abs__screen_simple=0x7f030013;
+        public static final int abs__screen_simple_overlay_action_mode=0x7f030014;
+        public static final int abs__search_dropdown_item_icons_2line=0x7f030015;
+        public static final int abs__search_view=0x7f030016;
+        public static final int abs__simple_dropdown_hint=0x7f030017;
+        public static final int activity_torrentselect=0x7f030018;
+        public static final int advanced_options=0x7f030019;
+        public static final int audio_albums_songs=0x7f03001a;
+        public static final int audio_browser=0x7f03001b;
+        public static final int audio_browser_item=0x7f03001c;
+        public static final int audio_browser_separator=0x7f03001d;
+        public static final int audio_list=0x7f03001e;
+        public static final int audio_media_switcher_item=0x7f03001f;
+        public static final int audio_player=0x7f030020;
+        public static final int audio_playlist_item=0x7f030021;
+        public static final int audio_playlist_item_drag_shadow=0x7f030022;
+        public static final int browser=0x7f030023;
+        public static final int browser_item=0x7f030024;
+        public static final int debug_log=0x7f030025;
+        public static final int directory_view=0x7f030026;
+        public static final int directory_view_item=0x7f030027;
+        public static final int equalizer=0x7f030028;
+        public static final int equalizer_bar=0x7f030029;
+        public static final int expandable_jump_to_time=0x7f03002a;
+        public static final int expandable_layout=0x7f03002b;
+        public static final int expandable_speed_selector=0x7f03002c;
+        public static final int expandable_time_sleep=0x7f03002d;
+        public static final int history_list=0x7f03002e;
+        public static final int info_dialog=0x7f03002f;
+        public static final int list_header=0x7f030030;
+        public static final int list_item=0x7f030031;
+        public static final int main=0x7f030032;
+        public static final int media_info=0x7f030033;
+        public static final int menu_genre_row=0x7f030034;
+        public static final int not_compatible=0x7f030035;
+        public static final int notification=0x7f030036;
+        public static final int notification_expanded=0x7f030037;
+        public static final int player=0x7f030038;
+        public static final int search=0x7f030039;
+        public static final int sherlock_spinner_dropdown_item=0x7f03003a;
+        public static final int sherlock_spinner_item=0x7f03003b;
+        public static final int sidebar=0x7f03003c;
+        public static final int sidebar_item=0x7f03003d;
+        public static final int sliding_menu=0x7f03003e;
+        public static final int slidingmenumain=0x7f03003f;
+        public static final int tab_layout=0x7f030040;
+        public static final int video_grid=0x7f030041;
+        public static final int video_grid_item=0x7f030042;
+        public static final int video_list_item=0x7f030043;
+        public static final int vlc_main=0x7f030044;
+        public static final int vlcwidget=0x7f030045;
+    }
+    public static final class menu {
+        public static final int audio_list_browser=0x7f0f0000;
+        public static final int audio_player=0x7f0f0001;
+        public static final int directory_view=0x7f0f0002;
+        public static final int history_view=0x7f0f0003;
+        public static final int media_library=0x7f0f0004;
+        public static final int search=0x7f0f0005;
+        public static final int torrent_select=0x7f0f0006;
+        public static final int video_list=0x7f0f0007;
+    }
+    public static final class plurals {
+        public static final int albums_quantity=0x7f0c0000;
+        public static final int mediafiles_quantity=0x7f0c0001;
+        public static final int search_found_results_quantity=0x7f0c0002;
+        public static final int songs_quantity=0x7f0c0003;
+        public static final int subfolders_quantity=0x7f0c0004;
+        public static final int track_channels_info_quantity=0x7f0c0005;
+        public static final int videos_quantity=0x7f0c0006;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int drawer_close=0x7f040001;
-        public static final int drawer_open=0x7f040002;
-        public static final int genre=0x7f040003;
+        public static final int about=0x7f0d0000;
+        public static final int about_copyright=0x7f0d0001;
+        public static final int about_link=0x7f0d0002;
+        public static final int about_text=0x7f0d0003;
+        public static final int abs__action_bar_home_description=0x7f0d0004;
+        public static final int abs__action_bar_up_description=0x7f0d0005;
+        public static final int abs__action_menu_overflow_description=0x7f0d0006;
+        public static final int abs__action_mode_done=0x7f0d0007;
+        public static final int abs__activity_chooser_view_see_all=0x7f0d0008;
+        public static final int abs__activitychooserview_choose_application=0x7f0d0009;
+        public static final int abs__searchview_description_clear=0x7f0d000a;
+        public static final int abs__searchview_description_query=0x7f0d000b;
+        public static final int abs__searchview_description_search=0x7f0d000c;
+        public static final int abs__searchview_description_submit=0x7f0d000d;
+        public static final int abs__searchview_description_voice=0x7f0d000e;
+        public static final int abs__shareactionprovider_share_with=0x7f0d000f;
+        public static final int abs__shareactionprovider_share_with_application=0x7f0d0010;
+        public static final int add_custom_path=0x7f0d0011;
+        public static final int add_custom_path_description=0x7f0d0012;
+        public static final int advanced_debugging=0x7f0d0013;
+        public static final int advanced_prefs_category=0x7f0d0014;
+        public static final int album=0x7f0d0015;
+        public static final int albums=0x7f0d0016;
+        public static final int all_albums=0x7f0d0017;
+        public static final int aout=0x7f0d0018;
+        public static final int aout_audiotrack=0x7f0d0019;
+        public static final int aout_audiotrack_java=0x7f0d001a;
+        public static final int aout_opensles=0x7f0d001b;
+        public static final int aout_summary=0x7f0d001c;
+        public static final int app_name=0x7f0d001d;
+        public static final int app_name_full=0x7f0d001e;
+        public static final int append=0x7f0d001f;
+        public static final int append_all=0x7f0d0020;
+        public static final int artist=0x7f0d0021;
+        public static final int artists=0x7f0d0022;
+        public static final int audio=0x7f0d0023;
+        public static final int authors=0x7f0d0024;
+        public static final int automatic=0x7f0d0025;
+        public static final int beta_warning=0x7f0d0026;
+        public static final int bookmarks=0x7f0d0027;
+        public static final int brightness=0x7f0d0028;
+        public static final int btn_search_magnet=0x7f0d0029;
+        public static final int btn_select_torrent=0x7f0d002a;
+        public static final int cancel=0x7f0d002b;
+        public static final int chroma_format=0x7f0d002c;
+        public static final int chroma_format_summary=0x7f0d002d;
+        public static final int clear_history=0x7f0d002e;
+        public static final int clear_log=0x7f0d002f;
+        public static final int clear_media_db=0x7f0d0030;
+        public static final int colon=0x7f0d0031;
+        public static final int compiled_by=0x7f0d0032;
+        public static final int confirm_delete=0x7f0d0033;
+        public static final int copied_to_clipboard=0x7f0d0034;
+        public static final int copy_to_clipboard=0x7f0d0035;
+        public static final int cover_art=0x7f0d0036;
+        public static final int deblocking=0x7f0d0037;
+        public static final int deblocking_all=0x7f0d0038;
+        public static final int deblocking_always=0x7f0d0039;
+        public static final int deblocking_nonkey=0x7f0d003a;
+        public static final int deblocking_nonref=0x7f0d003b;
+        public static final int deblocking_summary=0x7f0d003c;
+        public static final int debug_logs=0x7f0d003d;
+        public static final int delete=0x7f0d003e;
+        public static final int directories=0x7f0d003f;
+        public static final int directories_summary=0x7f0d0040;
+        public static final int directory=0x7f0d0041;
+        public static final int download=0x7f0d0042;
+        public static final int download_sum=0x7f0d0043;
+        public static final int drawer_close=0x7f0d0044;
+        public static final int drawer_open=0x7f0d0045;
+        public static final int empty=0x7f0d0046;
+        public static final int enable_brightness_gesture=0x7f0d0047;
+        public static final int enable_brightness_gesture_summary=0x7f0d0048;
+        public static final int enable_frame_skip=0x7f0d0049;
+        public static final int enable_frame_skip_summary=0x7f0d004a;
+        public static final int enable_headset_detection=0x7f0d004b;
+        public static final int enable_headset_detection_summary=0x7f0d004c;
+        public static final int enable_jump_buttons=0x7f0d004d;
+        public static final int enable_jump_buttons_summary=0x7f0d004e;
+        public static final int enable_steal_remote_control=0x7f0d004f;
+        public static final int enable_steal_remote_control_summary=0x7f0d0050;
+        public static final int enable_time_stretching_audio=0x7f0d0051;
+        public static final int enable_time_stretching_audio_summary=0x7f0d0052;
+        public static final int enable_verbose_mode=0x7f0d0053;
+        public static final int enable_verbose_mode_summary=0x7f0d0054;
+        public static final int encountered_error_message=0x7f0d0055;
+        public static final int encountered_error_title=0x7f0d0056;
+        public static final int equalizer=0x7f0d0057;
+        public static final int error_message_is=0x7f0d0058;
+        public static final int error_not_compatible=0x7f0d0059;
+        public static final int error_problem=0x7f0d005a;
+        public static final int extra_info=0x7f0d005b;
+        public static final int filebrowser_title=0x7f0d005c;
+        public static final int genre=0x7f0d005d;
+        public static final int genres=0x7f0d005e;
+        public static final int hardware_acceleration=0x7f0d005f;
+        public static final int hardware_acceleration_decoding=0x7f0d0060;
+        public static final int hardware_acceleration_disabled=0x7f0d0061;
+        public static final int hardware_acceleration_full=0x7f0d0062;
+        public static final int hardware_acceleration_summary=0x7f0d0063;
+        public static final int history=0x7f0d0064;
+        public static final int info=0x7f0d0065;
+        public static final int info_title=0x7f0d0066;
+        public static final int internal_memory=0x7f0d0067;
+        public static final int intro_text=0x7f0d0068;
+        public static final int intro_text_no_file_explorer=0x7f0d0069;
+        public static final int invalid_location=0x7f0d006a;
+        public static final int invisible=0x7f0d006b;
+        public static final int jump_to_time=0x7f0d006c;
+        public static final int last_playlist=0x7f0d006d;
+        public static final int library_prefs_category=0x7f0d006e;
+        public static final int libt_progress_text=0x7f0d006f;
+        public static final int libtorrent_debug=0x7f0d0070;
+        public static final int libtorrent_debug_summary=0x7f0d0071;
+        public static final int licence=0x7f0d0072;
+        public static final int listenport=0x7f0d0073;
+        public static final int listenport_sum=0x7f0d0074;
+        public static final int load_1_period=0x7f0d0075;
+        public static final int load_2_period=0x7f0d0076;
+        public static final int load_3_period=0x7f0d0077;
+        public static final int loading=0x7f0d0078;
+        public static final int locked=0x7f0d0079;
+        public static final int magnet1=0x7f0d007a;
+        public static final int magnet1text=0x7f0d007b;
+        public static final int magnet2=0x7f0d007c;
+        public static final int magnet2text=0x7f0d007d;
+        public static final int magnet3=0x7f0d007e;
+        public static final int magnet3text=0x7f0d007f;
+        public static final int main_prefs_category=0x7f0d0080;
+        public static final int media_db_cleared=0x7f0d0081;
+        public static final int mediafiles=0x7f0d0082;
+        public static final int minus=0x7f0d0083;
+        public static final int network_caching=0x7f0d0084;
+        public static final int network_caching_summary=0x7f0d0085;
+        public static final int next=0x7f0d0086;
+        public static final int no_file_picker_found=0x7f0d0087;
+        public static final int nohistory=0x7f0d0088;
+        public static final int nomedia=0x7f0d0089;
+        public static final int nosubdirectory=0x7f0d008a;
+        public static final int not_show_again=0x7f0d008b;
+        public static final int notavailable=0x7f0d008c;
+        public static final int ok=0x7f0d008d;
+        public static final int open=0x7f0d008e;
+        public static final int open_mrl=0x7f0d008f;
+        public static final int open_mrl_dialog_msg=0x7f0d0090;
+        public static final int open_mrl_dialog_title=0x7f0d0091;
+        public static final int other=0x7f0d0092;
+        public static final int other_prefs_category=0x7f0d0093;
+        public static final int parent_folder=0x7f0d0094;
+        public static final int pause=0x7f0d0095;
+        public static final int performance_prefs_category=0x7f0d0096;
+        public static final int play=0x7f0d0097;
+        public static final int play_all=0x7f0d0098;
+        public static final int play_as_audio=0x7f0d0099;
+        public static final int play_as_video=0x7f0d009a;
+        public static final int play_from_start=0x7f0d009b;
+        public static final int playback_speed=0x7f0d009c;
+        public static final int playlists=0x7f0d009d;
+        public static final int please_wait=0x7f0d009e;
+        public static final int plus=0x7f0d009f;
+        public static final int preferences=0x7f0d00a0;
+        public static final int previous=0x7f0d00a1;
+        public static final int quit=0x7f0d00a2;
+        public static final int refresh=0x7f0d00a3;
+        public static final int remove=0x7f0d00a4;
+        public static final int remove_custom_path=0x7f0d00a5;
+        public static final int repeat=0x7f0d00a6;
+        public static final int revision=0x7f0d00a7;
+        public static final int ringtone_error=0x7f0d00a8;
+        public static final int ringtone_set=0x7f0d00a9;
+        public static final int screen_orientation=0x7f0d00aa;
+        public static final int screen_orientation_landscape=0x7f0d00ab;
+        public static final int screen_orientation_portrait=0x7f0d00ac;
+        public static final int screen_orientation_reverse_landscape=0x7f0d00ad;
+        public static final int screen_orientation_reverse_portrait=0x7f0d00ae;
+        public static final int screen_orientation_sensor=0x7f0d00af;
+        public static final int screen_orientation_start_lock=0x7f0d00b0;
+        public static final int searchable_hint=0x7f0d00b1;
+        public static final int security=0x7f0d00b2;
+        public static final int security_sum=0x7f0d00b3;
+        public static final int session_settings=0x7f0d00b4;
+        public static final int set_locale=0x7f0d00b5;
+        public static final int set_locale_detail=0x7f0d00b6;
+        public static final int set_locale_popup=0x7f0d00b7;
+        public static final int set_song=0x7f0d00b8;
+        public static final int settings=0x7f0d00b9;
+        public static final int show_debug=0x7f0d00ba;
+        public static final int shuffle=0x7f0d00bb;
+        public static final int sleep_cancel=0x7f0d00bc;
+        public static final int sleep_title=0x7f0d00bd;
+        public static final int songs=0x7f0d00be;
+        public static final int sortby=0x7f0d00bf;
+        public static final int sortby_length=0x7f0d00c0;
+        public static final int sortby_name=0x7f0d00c1;
+        public static final int speed_placeholder=0x7f0d00c2;
+        public static final int start_logging=0x7f0d00c3;
+        public static final int stop=0x7f0d00c4;
+        public static final int stop_logging=0x7f0d00c5;
+        public static final int subtitle_label=0x7f0d00c6;
+        public static final int subtitle_select=0x7f0d00c7;
+        public static final int subtitle_text_encoding=0x7f0d00c8;
+        public static final int surface_best_fit=0x7f0d00c9;
+        public static final int surface_fill=0x7f0d00ca;
+        public static final int surface_fit_horizontal=0x7f0d00cb;
+        public static final int surface_fit_vertical=0x7f0d00cc;
+        public static final int surface_original=0x7f0d00cd;
+        public static final int thumbnail=0x7f0d00ce;
+        public static final int time_0=0x7f0d00cf;
+        public static final int title=0x7f0d00d0;
+        public static final int tools=0x7f0d00d1;
+        public static final int track_audio=0x7f0d00d2;
+        public static final int track_codec_info=0x7f0d00d3;
+        public static final int track_framerate_info=0x7f0d00d4;
+        public static final int track_language_info=0x7f0d00d5;
+        public static final int track_resolution_info=0x7f0d00d6;
+        public static final int track_samplerate_info=0x7f0d00d7;
+        public static final int track_text=0x7f0d00d8;
+        public static final int track_unknown=0x7f0d00d9;
+        public static final int track_video=0x7f0d00da;
+        public static final int unknown_album=0x7f0d00db;
+        public static final int unknown_artist=0x7f0d00dc;
+        public static final int unknown_genre=0x7f0d00dd;
+        public static final int unlocked=0x7f0d00de;
+        public static final int unseekable_stream=0x7f0d00df;
+        public static final int upload=0x7f0d00e0;
+        public static final int upload_sum=0x7f0d00e1;
+        public static final int validation=0x7f0d00e2;
+        public static final int video=0x7f0d00e3;
+        public static final int vlc_authors=0x7f0d00e4;
+        public static final int volume=0x7f0d00e5;
+        public static final int vout=0x7f0d00e6;
+        public static final int vout_android_surface=0x7f0d00e7;
+        public static final int vout_opengles2=0x7f0d00e8;
+        public static final int vout_summary=0x7f0d00e9;
+        public static final int widget_name=0x7f0d00ea;
     }
+    public static final class style {
+        public static final int ActionBar=0x7f0e0000;
+        public static final int ActionBar_Text=0x7f0e0001;
+        /** 
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+         */
+        public static final int AppBaseTheme=0x7f0e0002;
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
+         */
+        public static final int AppTheme=0x7f0e0003;
+        public static final int Sherlock___TextAppearance_Small=0x7f0e0004;
+        public static final int Sherlock___Theme=0x7f0e0005;
+        public static final int Sherlock___Theme_DarkActionBar=0x7f0e0006;
+        public static final int Sherlock___Theme_Light=0x7f0e0007;
+        public static final int Sherlock___Widget_ActionBar=0x7f0e0008;
+        public static final int Sherlock___Widget_ActionMode=0x7f0e0009;
+        public static final int Sherlock___Widget_ActivityChooserView=0x7f0e000a;
+        public static final int Sherlock___Widget_Holo_DropDownItem=0x7f0e000b;
+        public static final int Sherlock___Widget_Holo_ListView=0x7f0e000c;
+        public static final int Sherlock___Widget_Holo_Spinner=0x7f0e000d;
+        public static final int Sherlock___Widget_SearchAutoCompleteTextView=0x7f0e000e;
+        public static final int TextAppearance_Sherlock=0x7f0e000f;
+        public static final int TextAppearance_Sherlock_Light_SearchResult=0x7f0e0010;
+        public static final int TextAppearance_Sherlock_Light_SearchResult_Subtitle=0x7f0e0011;
+        public static final int TextAppearance_Sherlock_Light_SearchResult_Title=0x7f0e0012;
+        public static final int TextAppearance_Sherlock_Light_Small=0x7f0e0013;
+        public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Large=0x7f0e0014;
+        public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Small=0x7f0e0015;
+        public static final int TextAppearance_Sherlock_SearchResult=0x7f0e0016;
+        public static final int TextAppearance_Sherlock_SearchResult_Subtitle=0x7f0e0017;
+        public static final int TextAppearance_Sherlock_SearchResult_Title=0x7f0e0018;
+        public static final int TextAppearance_Sherlock_Small=0x7f0e0019;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Menu=0x7f0e001a;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle=0x7f0e001b;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle_Inverse=0x7f0e001c;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Title=0x7f0e001d;
+        public static final int TextAppearance_Sherlock_Widget_ActionBar_Title_Inverse=0x7f0e001e;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Subtitle=0x7f0e001f;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Subtitle_Inverse=0x7f0e0020;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Title=0x7f0e0021;
+        public static final int TextAppearance_Sherlock_Widget_ActionMode_Title_Inverse=0x7f0e0022;
+        public static final int TextAppearance_Sherlock_Widget_DropDownHint=0x7f0e0023;
+        public static final int TextAppearance_Sherlock_Widget_DropDownItem=0x7f0e0024;
+        public static final int TextAppearance_Sherlock_Widget_PopupMenu=0x7f0e0025;
+        public static final int TextAppearance_Sherlock_Widget_PopupMenu_Large=0x7f0e0026;
+        public static final int TextAppearance_Sherlock_Widget_PopupMenu_Small=0x7f0e0027;
+        public static final int TextAppearance_Sherlock_Widget_TextView_SpinnerItem=0x7f0e0028;
+        public static final int Theme_Sherlock=0x7f0e0029;
+        public static final int Theme_Sherlock_Light=0x7f0e002a;
+        public static final int Theme_Sherlock_Light_DarkActionBar=0x7f0e002b;
+        public static final int Theme_Sherlock_Light_NoActionBar=0x7f0e002c;
+        public static final int Theme_Sherlock_NoActionBar=0x7f0e002d;
+        public static final int Theme_VLC=0x7f0e002e;
+        public static final int Theme_VLC_AlertMenu=0x7f0e002f;
+        public static final int Theme_VLC_Basic=0x7f0e0030;
+        public static final int Theme_VLC_Fullscreen=0x7f0e0031;
+        public static final int Theme_VLC_List=0x7f0e0032;
+        public static final int Theme_VLC_NoTitleBar=0x7f0e0033;
+        public static final int Widget=0x7f0e0034;
+        public static final int Widget_Sherlock_ActionBar=0x7f0e0035;
+        public static final int Widget_Sherlock_ActionBar_Solid=0x7f0e0036;
+        public static final int Widget_Sherlock_ActionBar_TabBar=0x7f0e0037;
+        public static final int Widget_Sherlock_ActionBar_TabText=0x7f0e0038;
+        public static final int Widget_Sherlock_ActionBar_TabView=0x7f0e0039;
+        public static final int Widget_Sherlock_ActionButton=0x7f0e003a;
+        public static final int Widget_Sherlock_ActionButton_CloseMode=0x7f0e003b;
+        public static final int Widget_Sherlock_ActionButton_Overflow=0x7f0e003c;
+        public static final int Widget_Sherlock_ActionMode=0x7f0e003d;
+        public static final int Widget_Sherlock_ActivityChooserView=0x7f0e003e;
+        public static final int Widget_Sherlock_Button_Small=0x7f0e003f;
+        public static final int Widget_Sherlock_DropDownItem_Spinner=0x7f0e0040;
+        public static final int Widget_Sherlock_Light_ActionBar=0x7f0e0041;
+        public static final int Widget_Sherlock_Light_ActionBar_Solid=0x7f0e0042;
+        public static final int Widget_Sherlock_Light_ActionBar_Solid_Inverse=0x7f0e0043;
+        public static final int Widget_Sherlock_Light_ActionBar_TabBar=0x7f0e0044;
+        public static final int Widget_Sherlock_Light_ActionBar_TabBar_Inverse=0x7f0e0045;
+        public static final int Widget_Sherlock_Light_ActionBar_TabText=0x7f0e0046;
+        public static final int Widget_Sherlock_Light_ActionBar_TabText_Inverse=0x7f0e0047;
+        public static final int Widget_Sherlock_Light_ActionBar_TabView=0x7f0e0048;
+        public static final int Widget_Sherlock_Light_ActionBar_TabView_Inverse=0x7f0e0049;
+        public static final int Widget_Sherlock_Light_ActionButton=0x7f0e004a;
+        public static final int Widget_Sherlock_Light_ActionButton_CloseMode=0x7f0e004b;
+        public static final int Widget_Sherlock_Light_ActionButton_Overflow=0x7f0e004c;
+        public static final int Widget_Sherlock_Light_ActionMode=0x7f0e004d;
+        public static final int Widget_Sherlock_Light_ActionMode_Inverse=0x7f0e004e;
+        public static final int Widget_Sherlock_Light_ActivityChooserView=0x7f0e004f;
+        public static final int Widget_Sherlock_Light_Button_Small=0x7f0e0050;
+        public static final int Widget_Sherlock_Light_DropDownItem_Spinner=0x7f0e0051;
+        public static final int Widget_Sherlock_Light_ListPopupWindow=0x7f0e0052;
+        public static final int Widget_Sherlock_Light_ListView_DropDown=0x7f0e0053;
+        public static final int Widget_Sherlock_Light_PopupMenu=0x7f0e0054;
+        public static final int Widget_Sherlock_Light_PopupWindow_ActionMode=0x7f0e0055;
+        public static final int Widget_Sherlock_Light_ProgressBar=0x7f0e0056;
+        public static final int Widget_Sherlock_Light_ProgressBar_Horizontal=0x7f0e0057;
+        public static final int Widget_Sherlock_Light_SearchAutoCompleteTextView=0x7f0e0058;
+        public static final int Widget_Sherlock_Light_Spinner_DropDown_ActionBar=0x7f0e0059;
+        public static final int Widget_Sherlock_ListPopupWindow=0x7f0e005a;
+        public static final int Widget_Sherlock_ListView_DropDown=0x7f0e005b;
+        public static final int Widget_Sherlock_PopupMenu=0x7f0e005c;
+        public static final int Widget_Sherlock_PopupWindow_ActionMode=0x7f0e005d;
+        public static final int Widget_Sherlock_ProgressBar=0x7f0e005e;
+        public static final int Widget_Sherlock_ProgressBar_Horizontal=0x7f0e005f;
+        public static final int Widget_Sherlock_SearchAutoCompleteTextView=0x7f0e0060;
+        public static final int Widget_Sherlock_Spinner_DropDown_ActionBar=0x7f0e0061;
+        public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0e0062;
+        public static final int info_dialog=0x7f0e0063;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f050000;
+        public static final int searchable=0x7f050001;
+        public static final int torrent_settings=0x7f050002;
+        public static final int vlcwidget=0x7f050003;
+    }
+    public static final class styleable {
+        /** Attributes that can be used with a SherlockActionBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockActionBar_background com.PPinera.Torrent_Movies:background}</code></td><td> Specifies a background drawable for the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_backgroundSplit com.PPinera.Torrent_Movies:backgroundSplit}</code></td><td> Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_backgroundStacked com.PPinera.Torrent_Movies:backgroundStacked}</code></td><td> Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_customNavigationLayout com.PPinera.Torrent_Movies:customNavigationLayout}</code></td><td> Specifies a layout for custom navigation.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_displayOptions com.PPinera.Torrent_Movies:displayOptions}</code></td><td> Options affecting how the action bar is displayed.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_divider com.PPinera.Torrent_Movies:divider}</code></td><td> Specifies the drawable used for item dividers.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_height com.PPinera.Torrent_Movies:height}</code></td><td> Specifies a fixed height.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_homeLayout com.PPinera.Torrent_Movies:homeLayout}</code></td><td> Specifies a layout to use for the "home" section of the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_icon com.PPinera.Torrent_Movies:icon}</code></td><td> Specifies the drawable used for the application icon.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_indeterminateProgressStyle com.PPinera.Torrent_Movies:indeterminateProgressStyle}</code></td><td> Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_itemPadding com.PPinera.Torrent_Movies:itemPadding}</code></td><td>
+             Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_logo com.PPinera.Torrent_Movies:logo}</code></td><td> Specifies the drawable used for the application logo.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_navigationMode com.PPinera.Torrent_Movies:navigationMode}</code></td><td> The type of navigation to use.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_progressBarPadding com.PPinera.Torrent_Movies:progressBarPadding}</code></td><td> Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_progressBarStyle com.PPinera.Torrent_Movies:progressBarStyle}</code></td><td> Specifies a style resource to use for an embedded progress bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_subtitle com.PPinera.Torrent_Movies:subtitle}</code></td><td> Specifies subtitle text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #SherlockActionBar_subtitleTextStyle com.PPinera.Torrent_Movies:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #SherlockActionBar_title com.PPinera.Torrent_Movies:title}</code></td><td> Specifies title text used for navigationMode="normal" </td></tr>
+           <tr><td><code>{@link #SherlockActionBar_titleTextStyle com.PPinera.Torrent_Movies:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           </table>
+           @see #SherlockActionBar_background
+           @see #SherlockActionBar_backgroundSplit
+           @see #SherlockActionBar_backgroundStacked
+           @see #SherlockActionBar_customNavigationLayout
+           @see #SherlockActionBar_displayOptions
+           @see #SherlockActionBar_divider
+           @see #SherlockActionBar_height
+           @see #SherlockActionBar_homeLayout
+           @see #SherlockActionBar_icon
+           @see #SherlockActionBar_indeterminateProgressStyle
+           @see #SherlockActionBar_itemPadding
+           @see #SherlockActionBar_logo
+           @see #SherlockActionBar_navigationMode
+           @see #SherlockActionBar_progressBarPadding
+           @see #SherlockActionBar_progressBarStyle
+           @see #SherlockActionBar_subtitle
+           @see #SherlockActionBar_subtitleTextStyle
+           @see #SherlockActionBar_title
+           @see #SherlockActionBar_titleTextStyle
+         */
+        public static final int[] SherlockActionBar = {
+            0x7f010000, 0x7f010001, 0x7f010008, 0x7f01000b,
+            0x7f010012, 0x7f010013, 0x7f010015, 0x7f010016,
+            0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a,
+            0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e,
+            0x7f01001f, 0x7f010020, 0x7f010021
+        };
+        /**
+          <p>
+          @attr description
+           Specifies a background drawable for the action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:background
+        */
+        public static final int SherlockActionBar_background = 0;
+        /**
+          <p>
+          @attr description
+           Specifies a background drawable for the bottom component of a split action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:backgroundSplit
+        */
+        public static final int SherlockActionBar_backgroundSplit = 1;
+        /**
+          <p>
+          @attr description
+           Specifies a background drawable for a second stacked row of the action bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:backgroundStacked
+        */
+        public static final int SherlockActionBar_backgroundStacked = 12;
+        /**
+          <p>
+          @attr description
+           Specifies a layout for custom navigation. Overrides navigationMode. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:customNavigationLayout
+        */
+        public static final int SherlockActionBar_customNavigationLayout = 13;
+        /**
+          <p>
+          @attr description
+           Options affecting how the action bar is displayed. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>useLogo</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>showHome</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>homeAsUp</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>showTitle</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:displayOptions
+        */
+        public static final int SherlockActionBar_displayOptions = 7;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for item dividers. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:divider
+        */
+        public static final int SherlockActionBar_divider = 2;
+        /**
+          <p>
+          @attr description
+           Specifies a fixed height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:height
+        */
+        public static final int SherlockActionBar_height = 3;
+        /**
+          <p>
+          @attr description
+           Specifies a layout to use for the "home" section of the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:homeLayout
+        */
+        public static final int SherlockActionBar_homeLayout = 14;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for the application icon. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:icon
+        */
+        public static final int SherlockActionBar_icon = 10;
+        /**
+          <p>
+          @attr description
+           Specifies a style resource to use for an indeterminate progress spinner. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:indeterminateProgressStyle
+        */
+        public static final int SherlockActionBar_indeterminateProgressStyle = 16;
+        /**
+          <p>
+          @attr description
+          
+             Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar.
+        
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:itemPadding
+        */
+        public static final int SherlockActionBar_itemPadding = 18;
+        /**
+          <p>
+          @attr description
+           Specifies the drawable used for the application logo. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:logo
+        */
+        public static final int SherlockActionBar_logo = 11;
+        /**
+          <p>
+          @attr description
+           The type of navigation to use. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td> Normal static title text </td></tr>
+<tr><td><code>listMode</code></td><td>1</td><td> The action bar will use a selection list for navigation. </td></tr>
+<tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:navigationMode
+        */
+        public static final int SherlockActionBar_navigationMode = 6;
+        /**
+          <p>
+          @attr description
+           Specifies the horizontal padding on either end for an embedded progress bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:progressBarPadding
+        */
+        public static final int SherlockActionBar_progressBarPadding = 17;
+        /**
+          <p>
+          @attr description
+           Specifies a style resource to use for an embedded progress bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:progressBarStyle
+        */
+        public static final int SherlockActionBar_progressBarStyle = 15;
+        /**
+          <p>
+          @attr description
+           Specifies subtitle text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:subtitle
+        */
+        public static final int SherlockActionBar_subtitle = 9;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for subtitle text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:subtitleTextStyle
+        */
+        public static final int SherlockActionBar_subtitleTextStyle = 4;
+        /**
+          <p>
+          @attr description
+           Specifies title text used for navigationMode="normal" 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:title
+        */
+        public static final int SherlockActionBar_title = 8;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for title text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:titleTextStyle
+        */
+        public static final int SherlockActionBar_titleTextStyle = 5;
+        /** Attributes that can be used with a SherlockActionMenuItemView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockActionMenuItemView_android_minWidth android:minWidth}</code></td><td></td></tr>
+           </table>
+           @see #SherlockActionMenuItemView_android_minWidth
+         */
+        public static final int[] SherlockActionMenuItemView = {
+            0x0101013f
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+          attribute's value can be found in the {@link #SherlockActionMenuItemView} array.
+          @attr name android:minWidth
+        */
+        public static final int SherlockActionMenuItemView_android_minWidth = 0;
+        /** Attributes that can be used with a SherlockActionMode.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockActionMode_background com.PPinera.Torrent_Movies:background}</code></td><td> Specifies a background for the action mode bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_backgroundSplit com.PPinera.Torrent_Movies:backgroundSplit}</code></td><td> Specifies a background for the split action mode bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_height com.PPinera.Torrent_Movies:height}</code></td><td> Specifies a fixed height for the action mode bar.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_subtitleTextStyle com.PPinera.Torrent_Movies:subtitleTextStyle}</code></td><td> Specifies a style to use for subtitle text.</td></tr>
+           <tr><td><code>{@link #SherlockActionMode_titleTextStyle com.PPinera.Torrent_Movies:titleTextStyle}</code></td><td> Specifies a style to use for title text.</td></tr>
+           </table>
+           @see #SherlockActionMode_background
+           @see #SherlockActionMode_backgroundSplit
+           @see #SherlockActionMode_height
+           @see #SherlockActionMode_subtitleTextStyle
+           @see #SherlockActionMode_titleTextStyle
+         */
+        public static final int[] SherlockActionMode = {
+            0x7f010000, 0x7f010001, 0x7f01000b, 0x7f010012,
+            0x7f010013
+        };
+        /**
+          <p>
+          @attr description
+           Specifies a background for the action mode bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:background
+        */
+        public static final int SherlockActionMode_background = 0;
+        /**
+          <p>
+          @attr description
+           Specifies a background for the split action mode bar. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:backgroundSplit
+        */
+        public static final int SherlockActionMode_backgroundSplit = 1;
+        /**
+          <p>
+          @attr description
+           Specifies a fixed height for the action mode bar. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:height
+        */
+        public static final int SherlockActionMode_height = 2;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for subtitle text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:subtitleTextStyle
+        */
+        public static final int SherlockActionMode_subtitleTextStyle = 3;
+        /**
+          <p>
+          @attr description
+           Specifies a style to use for title text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:titleTextStyle
+        */
+        public static final int SherlockActionMode_titleTextStyle = 4;
+        /** Attributes that can be used with a SherlockActivityChooserView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockActivityChooserView_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActivityChooserView_expandActivityOverflowButtonDrawable com.PPinera.Torrent_Movies:expandActivityOverflowButtonDrawable}</code></td><td>
+             The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+           <tr><td><code>{@link #SherlockActivityChooserView_initialActivityCount com.PPinera.Torrent_Movies:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
+           </table>
+           @see #SherlockActivityChooserView_android_background
+           @see #SherlockActivityChooserView_expandActivityOverflowButtonDrawable
+           @see #SherlockActivityChooserView_initialActivityCount
+         */
+        public static final int[] SherlockActivityChooserView = {
+            0x010100d4, 0x7f010022, 0x7f010023
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #SherlockActivityChooserView} array.
+          @attr name android:background
+        */
+        public static final int SherlockActivityChooserView_android_background = 0;
+        /**
+          <p>
+          @attr description
+          
+             The drawable to show in the button for expanding the activities overflow popup.
+             <strong>Note:</strong> Clients would like to set this drawable
+             as a clue about the action the chosen activity will perform. For
+             example, if share activity is to be chosen the drawable should
+             give a clue that sharing is to be performed.
+        
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:expandActivityOverflowButtonDrawable
+        */
+        public static final int SherlockActivityChooserView_expandActivityOverflowButtonDrawable = 2;
+        /**
+          <p>
+          @attr description
+           The maximal number of items initially shown in the activity list. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:initialActivityCount
+        */
+        public static final int SherlockActivityChooserView_initialActivityCount = 1;
+        /** Attributes that can be used with a SherlockMenuGroup.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_checkableBehavior android:checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_enabled android:enabled}</code></td><td> Whether the items are enabled.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_id android:id}</code></td><td> The ID of the group.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_menuCategory android:menuCategory}</code></td><td>
+             The category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_orderInCategory android:orderInCategory}</code></td><td>
+             The order within the category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_visible android:visible}</code></td><td> Whether the items are shown/visible.</td></tr>
+           </table>
+           @see #SherlockMenuGroup_android_checkableBehavior
+           @see #SherlockMenuGroup_android_enabled
+           @see #SherlockMenuGroup_android_id
+           @see #SherlockMenuGroup_android_menuCategory
+           @see #SherlockMenuGroup_android_orderInCategory
+           @see #SherlockMenuGroup_android_visible
+         */
+        public static final int[] SherlockMenuGroup = {
+            0x0101000e, 0x010100d0, 0x01010194, 0x010101de,
+            0x010101df, 0x010101e0
+        };
+        /**
+          <p>
+          @attr description
+           Whether the items are capable of displaying a check mark. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checkableBehavior}.
+          @attr name android:checkableBehavior
+        */
+        public static final int SherlockMenuGroup_android_checkableBehavior = 5;
+        /**
+          <p>
+          @attr description
+           Whether the items are enabled. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#enabled}.
+          @attr name android:enabled
+        */
+        public static final int SherlockMenuGroup_android_enabled = 0;
+        /**
+          <p>
+          @attr description
+           The ID of the group. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#id}.
+          @attr name android:id
+        */
+        public static final int SherlockMenuGroup_android_id = 1;
+        /**
+          <p>
+          @attr description
+          
+             The category applied to all items within this group.
+             (This will be or'ed with the orderInCategory attribute.)
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#menuCategory}.
+          @attr name android:menuCategory
+        */
+        public static final int SherlockMenuGroup_android_menuCategory = 3;
+        /**
+          <p>
+          @attr description
+          
+             The order within the category applied to all items within this group.
+             (This will be or'ed with the category attribute.)
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orderInCategory}.
+          @attr name android:orderInCategory
+        */
+        public static final int SherlockMenuGroup_android_orderInCategory = 4;
+        /**
+          <p>
+          @attr description
+           Whether the items are shown/visible. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#visible}.
+          @attr name android:visible
+        */
+        public static final int SherlockMenuGroup_android_visible = 2;
+        /** Attributes that can be used with a SherlockMenuItem.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_actionLayout android:actionLayout}</code></td><td>
+             An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_actionProviderClass android:actionProviderClass}</code></td><td>
+             The name of an optional ActionProvider class to instantiate an action view
+             and perform operations such as default action for that menu item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_actionViewClass android:actionViewClass}</code></td><td>
+             The name of an optional View class to instantiate and use as an
+             action view.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td>
+             The alphabetic shortcut key.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_checked android:checked}</code></td><td>
+             Whether the item is checked.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_enabled android:enabled}</code></td><td> Whether the item is enabled.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_icon android:icon}</code></td><td>
+             The icon associated with this item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_id android:id}</code></td><td> The ID of the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_menuCategory android:menuCategory}</code></td><td>
+             The category applied to the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_numericShortcut android:numericShortcut}</code></td><td>
+             The numeric shortcut key.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_onClick android:onClick}</code></td><td>
+             Name of a method on the Context used to inflate the menu that will be
+             called when the item is clicked.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_orderInCategory android:orderInCategory}</code></td><td>
+             The order within the category applied to the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_showAsAction android:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_titleCondensed android:titleCondensed}</code></td><td>
+             The condensed title associated with the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
+           </table>
+           @see #SherlockMenuItem_android_actionLayout
+           @see #SherlockMenuItem_android_actionProviderClass
+           @see #SherlockMenuItem_android_actionViewClass
+           @see #SherlockMenuItem_android_alphabeticShortcut
+           @see #SherlockMenuItem_android_checkable
+           @see #SherlockMenuItem_android_checked
+           @see #SherlockMenuItem_android_enabled
+           @see #SherlockMenuItem_android_icon
+           @see #SherlockMenuItem_android_id
+           @see #SherlockMenuItem_android_menuCategory
+           @see #SherlockMenuItem_android_numericShortcut
+           @see #SherlockMenuItem_android_onClick
+           @see #SherlockMenuItem_android_orderInCategory
+           @see #SherlockMenuItem_android_showAsAction
+           @see #SherlockMenuItem_android_title
+           @see #SherlockMenuItem_android_titleCondensed
+           @see #SherlockMenuItem_android_visible
+         */
+        public static final int[] SherlockMenuItem = {
+            0x01010002, 0x0101000e, 0x010100d0, 0x01010106,
+            0x01010194, 0x010101de, 0x010101df, 0x010101e1,
+            0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5,
+            0x0101026f, 0x010102d9, 0x010102fb, 0x010102fc,
+            0x01010389
+        };
+        /**
+          <p>
+          @attr description
+          
+             An optional layout to be used as an action view.
+             See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#actionLayout}.
+          @attr name android:actionLayout
+        */
+        public static final int SherlockMenuItem_android_actionLayout = 14;
+        /**
+          <p>
+          @attr description
+          
+             The name of an optional ActionProvider class to instantiate an action view
+             and perform operations such as default action for that menu item.
+             See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+             for more info.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#actionProviderClass}.
+          @attr name android:actionProviderClass
+        */
+        public static final int SherlockMenuItem_android_actionProviderClass = 16;
+        /**
+          <p>
+          @attr description
+          
+             The name of an optional View class to instantiate and use as an
+             action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+             for more info.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#actionViewClass}.
+          @attr name android:actionViewClass
+        */
+        public static final int SherlockMenuItem_android_actionViewClass = 15;
+        /**
+          <p>
+          @attr description
+          
+             The alphabetic shortcut key.  This is the shortcut when using a keyboard
+             with alphabetic keys.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#alphabeticShortcut}.
+          @attr name android:alphabeticShortcut
+        */
+        public static final int SherlockMenuItem_android_alphabeticShortcut = 9;
+        /**
+          <p>
+          @attr description
+           Whether the item is capable of displaying a check mark. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checkable}.
+          @attr name android:checkable
+        */
+        public static final int SherlockMenuItem_android_checkable = 11;
+        /**
+          <p>
+          @attr description
+          
+             Whether the item is checked.  Note that you must first have enabled checking with
+             the checkable attribute or else the check mark will not appear.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checked}.
+          @attr name android:checked
+        */
+        public static final int SherlockMenuItem_android_checked = 3;
+        /**
+          <p>
+          @attr description
+           Whether the item is enabled. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#enabled}.
+          @attr name android:enabled
+        */
+        public static final int SherlockMenuItem_android_enabled = 1;
+        /**
+          <p>
+          @attr description
+          
+             The icon associated with this item.  This icon will not always be shown, so
+             the title should be sufficient in describing this item.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#icon}.
+          @attr name android:icon
+        */
+        public static final int SherlockMenuItem_android_icon = 0;
+        /**
+          <p>
+          @attr description
+           The ID of the item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#id}.
+          @attr name android:id
+        */
+        public static final int SherlockMenuItem_android_id = 2;
+        /**
+          <p>
+          @attr description
+          
+             The category applied to the item.
+             (This will be or'ed with the orderInCategory attribute.)
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#menuCategory}.
+          @attr name android:menuCategory
+        */
+        public static final int SherlockMenuItem_android_menuCategory = 5;
+        /**
+          <p>
+          @attr description
+          
+             The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
+             keyboard.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#numericShortcut}.
+          @attr name android:numericShortcut
+        */
+        public static final int SherlockMenuItem_android_numericShortcut = 10;
+        /**
+          <p>
+          @attr description
+          
+             Name of a method on the Context used to inflate the menu that will be
+             called when the item is clicked.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#onClick}.
+          @attr name android:onClick
+        */
+        public static final int SherlockMenuItem_android_onClick = 12;
+        /**
+          <p>
+          @attr description
+          
+             The order within the category applied to the item.
+             (This will be or'ed with the category attribute.)
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orderInCategory}.
+          @attr name android:orderInCategory
+        */
+        public static final int SherlockMenuItem_android_orderInCategory = 6;
+        /**
+          <p>
+          @attr description
+           How this item should display in the Action Bar, if present. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#showAsAction}.
+          @attr name android:showAsAction
+        */
+        public static final int SherlockMenuItem_android_showAsAction = 13;
+        /**
+          <p>
+          @attr description
+           The title associated with the item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#title}.
+          @attr name android:title
+        */
+        public static final int SherlockMenuItem_android_title = 7;
+        /**
+          <p>
+          @attr description
+          
+             The condensed title associated with the item.  This is used in situations where the
+             normal title may be too long to be displayed.
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#titleCondensed}.
+          @attr name android:titleCondensed
+        */
+        public static final int SherlockMenuItem_android_titleCondensed = 8;
+        /**
+          <p>
+          @attr description
+           Whether the item is shown/visible. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#visible}.
+          @attr name android:visible
+        */
+        public static final int SherlockMenuItem_android_visible = 4;
+        /** Attributes that can be used with a SherlockMenuView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockMenuView_headerBackground com.PPinera.Torrent_Movies:headerBackground}</code></td><td> Default background for the menu header.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_horizontalDivider com.PPinera.Torrent_Movies:horizontalDivider}</code></td><td> Default horizontal divider between rows of menu items.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemBackground com.PPinera.Torrent_Movies:itemBackground}</code></td><td> Default background for each menu item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemIconDisabledAlpha com.PPinera.Torrent_Movies:itemIconDisabledAlpha}</code></td><td> Default disabled icon alpha for each menu item that shows an icon.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_itemTextAppearance com.PPinera.Torrent_Movies:itemTextAppearance}</code></td><td> Default appearance of menu item text.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_preserveIconSpacing com.PPinera.Torrent_Movies:preserveIconSpacing}</code></td><td> Whether space should be reserved in layout when an icon is missing.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_verticalDivider com.PPinera.Torrent_Movies:verticalDivider}</code></td><td> Default vertical divider between menu items.</td></tr>
+           <tr><td><code>{@link #SherlockMenuView_windowAnimationStyle com.PPinera.Torrent_Movies:windowAnimationStyle}</code></td><td> Default animations for the menu.</td></tr>
+           </table>
+           @see #SherlockMenuView_headerBackground
+           @see #SherlockMenuView_horizontalDivider
+           @see #SherlockMenuView_itemBackground
+           @see #SherlockMenuView_itemIconDisabledAlpha
+           @see #SherlockMenuView_itemTextAppearance
+           @see #SherlockMenuView_preserveIconSpacing
+           @see #SherlockMenuView_verticalDivider
+           @see #SherlockMenuView_windowAnimationStyle
+         */
+        public static final int[] SherlockMenuView = {
+            0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027,
+            0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b
+        };
+        /**
+          <p>
+          @attr description
+           Default background for the menu header. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:headerBackground
+        */
+        public static final int SherlockMenuView_headerBackground = 3;
+        /**
+          <p>
+          @attr description
+           Default horizontal divider between rows of menu items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:horizontalDivider
+        */
+        public static final int SherlockMenuView_horizontalDivider = 1;
+        /**
+          <p>
+          @attr description
+           Default background for each menu item. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:itemBackground
+        */
+        public static final int SherlockMenuView_itemBackground = 4;
+        /**
+          <p>
+          @attr description
+           Default disabled icon alpha for each menu item that shows an icon. 
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:itemIconDisabledAlpha
+        */
+        public static final int SherlockMenuView_itemIconDisabledAlpha = 6;
+        /**
+          <p>
+          @attr description
+           Default appearance of menu item text. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:itemTextAppearance
+        */
+        public static final int SherlockMenuView_itemTextAppearance = 0;
+        /**
+          <p>
+          @attr description
+           Whether space should be reserved in layout when an icon is missing. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:preserveIconSpacing
+        */
+        public static final int SherlockMenuView_preserveIconSpacing = 7;
+        /**
+          <p>
+          @attr description
+           Default vertical divider between menu items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:verticalDivider
+        */
+        public static final int SherlockMenuView_verticalDivider = 2;
+        /**
+          <p>
+          @attr description
+           Default animations for the menu. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:windowAnimationStyle
+        */
+        public static final int SherlockMenuView_windowAnimationStyle = 5;
+        /** Attributes that can be used with a SherlockSearchView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockSearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_iconifiedByDefault com.PPinera.Torrent_Movies:iconifiedByDefault}</code></td><td>
+             The default state of the SearchView.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_queryHint com.PPinera.Torrent_Movies:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
+           </table>
+           @see #SherlockSearchView_android_imeOptions
+           @see #SherlockSearchView_android_inputType
+           @see #SherlockSearchView_android_maxWidth
+           @see #SherlockSearchView_iconifiedByDefault
+           @see #SherlockSearchView_queryHint
+         */
+        public static final int[] SherlockSearchView = {
+            0x0101011f, 0x01010220, 0x01010264, 0x7f01002c,
+            0x7f01002d
+        };
+        /**
+          <p>
+          @attr description
+           The IME options to set on the query text field. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#imeOptions}.
+          @attr name android:imeOptions
+        */
+        public static final int SherlockSearchView_android_imeOptions = 2;
+        /**
+          <p>
+          @attr description
+           The input type to set on the query text field. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#inputType}.
+          @attr name android:inputType
+        */
+        public static final int SherlockSearchView_android_inputType = 1;
+        /**
+          <p>
+          @attr description
+           An optional maximum width of the SearchView. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#maxWidth}.
+          @attr name android:maxWidth
+        */
+        public static final int SherlockSearchView_android_maxWidth = 0;
+        /**
+          <p>
+          @attr description
+          
+             The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked.
+        
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:iconifiedByDefault
+        */
+        public static final int SherlockSearchView_iconifiedByDefault = 3;
+        /**
+          <p>
+          @attr description
+           An optional query hint string to be displayed in the empty query field. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:queryHint
+        */
+        public static final int SherlockSearchView_queryHint = 4;
+        /** Attributes that can be used with a SherlockSpinner.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td>
+             Horizontal offset from the spinner widget for positioning the dropdown
+             in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownSelector android:dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td>
+             Vertical offset from the spinner widget for positioning the dropdown in
+             spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_popupPromptView android:popupPromptView}</code></td><td>
+             Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_prompt android:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           </table>
+           @see #SherlockSpinner_android_dropDownHorizontalOffset
+           @see #SherlockSpinner_android_dropDownSelector
+           @see #SherlockSpinner_android_dropDownVerticalOffset
+           @see #SherlockSpinner_android_dropDownWidth
+           @see #SherlockSpinner_android_gravity
+           @see #SherlockSpinner_android_popupBackground
+           @see #SherlockSpinner_android_popupPromptView
+           @see #SherlockSpinner_android_prompt
+         */
+        public static final int[] SherlockSpinner = {
+            0x010100af, 0x01010175, 0x01010176, 0x0101017b,
+            0x01010262, 0x010102ac, 0x010102ad, 0x0101043a
+        };
+        /**
+          <p>
+          @attr description
+          
+             Horizontal offset from the spinner widget for positioning the dropdown
+             in spinnerMode="dropdown".
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
+          @attr name android:dropDownHorizontalOffset
+        */
+        public static final int SherlockSpinner_android_dropDownHorizontalOffset = 5;
+        /**
+          <p>
+          @attr description
+           List selector to use for spinnerMode="dropdown" display. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownSelector}.
+          @attr name android:dropDownSelector
+        */
+        public static final int SherlockSpinner_android_dropDownSelector = 1;
+        /**
+          <p>
+          @attr description
+          
+             Vertical offset from the spinner widget for positioning the dropdown in
+             spinnerMode="dropdown".
+        
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
+          @attr name android:dropDownVerticalOffset
+        */
+        public static final int SherlockSpinner_android_dropDownVerticalOffset = 6;
+        /**
+          <p>
+          @attr description
+           Width of the dropdown in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownWidth}.
+          @attr name android:dropDownWidth
+        */
+        public static final int SherlockSpinner_android_dropDownWidth = 4;
+        /**
+          <p>
+          @attr description
+           Gravity setting for positioning the currently selected item. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#gravity}.
+          @attr name android:gravity
+        */
+        public static final int SherlockSpinner_android_gravity = 0;
+        /**
+          <p>
+          @attr description
+           Background drawable to use for the dropdown in spinnerMode="dropdown". 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#popupBackground}.
+          @attr name android:popupBackground
+        */
+        public static final int SherlockSpinner_android_popupBackground = 2;
+        /**
+          <p>
+          @attr description
+          
+             Reference to a layout to use for displaying a prompt in the dropdown for
+             spinnerMode="dropdown". This layout must contain a TextView with the id
+             @android:id/text1 to be populated with the prompt text.
+        
+          <p>This is a private symbol.
+          @attr name android:popupPromptView
+        */
+        public static final int SherlockSpinner_android_popupPromptView = 7;
+        /**
+          <p>
+          @attr description
+           The prompt to display when the spinner's dialog is shown. 
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#prompt}.
+          @attr name android:prompt
+        */
+        public static final int SherlockSpinner_android_prompt = 3;
+        /** Attributes that can be used with a SherlockTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarDivider com.PPinera.Torrent_Movies:actionBarDivider}</code></td><td> Custom divider drawable to use for elements in the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarItemBackground com.PPinera.Torrent_Movies:actionBarItemBackground}</code></td><td> Custom item state list drawable background for action bar items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarSize com.PPinera.Torrent_Movies:actionBarSize}</code></td><td>
+             Size of the Action Bar, including the contextual
+             bar used to present Action Modes.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarSplitStyle com.PPinera.Torrent_Movies:actionBarSplitStyle}</code></td><td>
+             Reference to a style for the split Action Bar.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarStyle com.PPinera.Torrent_Movies:actionBarStyle}</code></td><td> Reference to a style for the Action Bar </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabBarStyle com.PPinera.Torrent_Movies:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabStyle com.PPinera.Torrent_Movies:actionBarTabStyle}</code></td><td> Default style for tabs within an action bar </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarTabTextStyle com.PPinera.Torrent_Movies:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionBarWidgetTheme com.PPinera.Torrent_Movies:actionBarWidgetTheme}</code></td><td>
+             Reference to a theme that should be used to inflate widgets
+             and layouts destined for the action bar.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionButtonStyle com.PPinera.Torrent_Movies:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionDropDownStyle com.PPinera.Torrent_Movies:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextAppearance com.PPinera.Torrent_Movies:actionMenuTextAppearance}</code></td><td>
+             TextAppearance style that will be applied to text that
+             appears within action menu items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionMenuTextColor com.PPinera.Torrent_Movies:actionMenuTextColor}</code></td><td> Color for text that appears within action menu items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeBackground com.PPinera.Torrent_Movies:actionModeBackground}</code></td><td> Background drawable to use for action mode UI </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseButtonStyle com.PPinera.Torrent_Movies:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeCloseDrawable com.PPinera.Torrent_Movies:actionModeCloseDrawable}</code></td><td> Drawable to use for the close action mode button </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModePopupWindowStyle com.PPinera.Torrent_Movies:actionModePopupWindowStyle}</code></td><td> PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeShareDrawable com.PPinera.Torrent_Movies:actionModeShareDrawable}</code></td><td> Drawable to use for the Share action button in WebView selection action modes </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeSplitBackground com.PPinera.Torrent_Movies:actionModeSplitBackground}</code></td><td> Background drawable to use for action mode UI in the lower split bar </td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionModeStyle com.PPinera.Torrent_Movies:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionOverflowButtonStyle com.PPinera.Torrent_Movies:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_actionSpinnerItemStyle com.PPinera.Torrent_Movies:actionSpinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_activatedBackgroundIndicator com.PPinera.Torrent_Movies:activatedBackgroundIndicator}</code></td><td> Drawable used as a background for activated items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_activityChooserViewStyle com.PPinera.Torrent_Movies:activityChooserViewStyle}</code></td><td> Default ActivityChooserView style.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_buttonStyleSmall com.PPinera.Torrent_Movies:buttonStyleSmall}</code></td><td> Small Button style.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_dividerVertical com.PPinera.Torrent_Movies:dividerVertical}</code></td><td> Drawable to use for generic vertical dividers.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropDownHintAppearance com.PPinera.Torrent_Movies:dropDownHintAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropDownListViewStyle com.PPinera.Torrent_Movies:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_dropdownListPreferredItemHeight com.PPinera.Torrent_Movies:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_homeAsUpIndicator com.PPinera.Torrent_Movies:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPopupWindowStyle com.PPinera.Torrent_Movies:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemHeightSmall com.PPinera.Torrent_Movies:listPreferredItemHeightSmall}</code></td><td> A smaller, sleeker list item height.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingLeft com.PPinera.Torrent_Movies:listPreferredItemPaddingLeft}</code></td><td> The preferred padding along the left edge of list items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_listPreferredItemPaddingRight com.PPinera.Torrent_Movies:listPreferredItemPaddingRight}</code></td><td> The preferred padding along the right edge of list items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_popupMenuStyle com.PPinera.Torrent_Movies:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchAutoCompleteTextView com.PPinera.Torrent_Movies:searchAutoCompleteTextView}</code></td><td> SearchView AutoCompleteTextView style </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchDropdownBackground com.PPinera.Torrent_Movies:searchDropdownBackground}</code></td><td> SearchView dropdown background </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchResultListItemHeight com.PPinera.Torrent_Movies:searchResultListItemHeight}</code></td><td> The list item height for search results.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewCloseIcon com.PPinera.Torrent_Movies:searchViewCloseIcon}</code></td><td> SearchView close button icon </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewEditQuery com.PPinera.Torrent_Movies:searchViewEditQuery}</code></td><td> SearchView query refinement icon </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewEditQueryBackground com.PPinera.Torrent_Movies:searchViewEditQueryBackground}</code></td><td> SearchView query refinement icon background </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewGoIcon com.PPinera.Torrent_Movies:searchViewGoIcon}</code></td><td> SearchView Go button icon </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewSearchIcon com.PPinera.Torrent_Movies:searchViewSearchIcon}</code></td><td> SearchView Search icon </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewTextField com.PPinera.Torrent_Movies:searchViewTextField}</code></td><td> SearchView text field background for the left section </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewTextFieldRight com.PPinera.Torrent_Movies:searchViewTextFieldRight}</code></td><td> SearchView text field background for the right section </td></tr>
+           <tr><td><code>{@link #SherlockTheme_searchViewVoiceIcon com.PPinera.Torrent_Movies:searchViewVoiceIcon}</code></td><td> SearchView Voice button icon </td></tr>
+           <tr><td><code>{@link #SherlockTheme_selectableItemBackground com.PPinera.Torrent_Movies:selectableItemBackground}</code></td><td> Background drawable for standalone items that need focus/pressed states.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_spinnerDropDownItemStyle com.PPinera.Torrent_Movies:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_spinnerItemStyle com.PPinera.Torrent_Movies:spinnerItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceLargePopupMenu com.PPinera.Torrent_Movies:textAppearanceLargePopupMenu}</code></td><td> Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceListItemSmall com.PPinera.Torrent_Movies:textAppearanceListItemSmall}</code></td><td> The preferred TextAppearance for the primary text of small list items.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSearchResultSubtitle com.PPinera.Torrent_Movies:textAppearanceSearchResultSubtitle}</code></td><td> Text color, typeface, size, and style for system search result subtitle.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSearchResultTitle com.PPinera.Torrent_Movies:textAppearanceSearchResultTitle}</code></td><td> Text color, typeface, size, and style for system search result title.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSmall com.PPinera.Torrent_Movies:textAppearanceSmall}</code></td><td> Text color, typeface, size, and style for "small" text.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textAppearanceSmallPopupMenu com.PPinera.Torrent_Movies:textAppearanceSmallPopupMenu}</code></td><td> Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimary com.PPinera.Torrent_Movies:textColorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimaryDisableOnly com.PPinera.Torrent_Movies:textColorPrimaryDisableOnly}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorPrimaryInverse com.PPinera.Torrent_Movies:textColorPrimaryInverse}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_textColorSearchUrl com.PPinera.Torrent_Movies:textColorSearchUrl}</code></td><td> Text color for urls in search suggestions, used by things like global search and the browser.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBar com.PPinera.Torrent_Movies:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionBarOverlay com.PPinera.Torrent_Movies:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowActionModeOverlay com.PPinera.Torrent_Movies:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowContentOverlay com.PPinera.Torrent_Movies:windowContentOverlay}</code></td><td>
+             This Drawable is overlaid over the foreground of the Window's content area, usually
+             to place a shadow below the title.</td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowMinWidthMajor com.PPinera.Torrent_Movies:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowMinWidthMinor com.PPinera.Torrent_Movies:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowNoTitle com.PPinera.Torrent_Movies:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockTheme_windowSplitActionBar com.PPinera.Torrent_Movies:windowSplitActionBar}</code></td><td></td></tr>
+           </table>
+           @see #SherlockTheme_actionBarDivider
+           @see #SherlockTheme_actionBarItemBackground
+           @see #SherlockTheme_actionBarSize
+           @see #SherlockTheme_actionBarSplitStyle
+           @see #SherlockTheme_actionBarStyle
+           @see #SherlockTheme_actionBarTabBarStyle
+           @see #SherlockTheme_actionBarTabStyle
+           @see #SherlockTheme_actionBarTabTextStyle
+           @see #SherlockTheme_actionBarWidgetTheme
+           @see #SherlockTheme_actionButtonStyle
+           @see #SherlockTheme_actionDropDownStyle
+           @see #SherlockTheme_actionMenuTextAppearance
+           @see #SherlockTheme_actionMenuTextColor
+           @see #SherlockTheme_actionModeBackground
+           @see #SherlockTheme_actionModeCloseButtonStyle
+           @see #SherlockTheme_actionModeCloseDrawable
+           @see #SherlockTheme_actionModePopupWindowStyle
+           @see #SherlockTheme_actionModeShareDrawable
+           @see #SherlockTheme_actionModeSplitBackground
+           @see #SherlockTheme_actionModeStyle
+           @see #SherlockTheme_actionOverflowButtonStyle
+           @see #SherlockTheme_actionSpinnerItemStyle
+           @see #SherlockTheme_activatedBackgroundIndicator
+           @see #SherlockTheme_activityChooserViewStyle
+           @see #SherlockTheme_buttonStyleSmall
+           @see #SherlockTheme_dividerVertical
+           @see #SherlockTheme_dropDownHintAppearance
+           @see #SherlockTheme_dropDownListViewStyle
+           @see #SherlockTheme_dropdownListPreferredItemHeight
+           @see #SherlockTheme_homeAsUpIndicator
+           @see #SherlockTheme_listPopupWindowStyle
+           @see #SherlockTheme_listPreferredItemHeightSmall
+           @see #SherlockTheme_listPreferredItemPaddingLeft
+           @see #SherlockTheme_listPreferredItemPaddingRight
+           @see #SherlockTheme_popupMenuStyle
+           @see #SherlockTheme_searchAutoCompleteTextView
+           @see #SherlockTheme_searchDropdownBackground
+           @see #SherlockTheme_searchResultListItemHeight
+           @see #SherlockTheme_searchViewCloseIcon
+           @see #SherlockTheme_searchViewEditQuery
+           @see #SherlockTheme_searchViewEditQueryBackground
+           @see #SherlockTheme_searchViewGoIcon
+           @see #SherlockTheme_searchViewSearchIcon
+           @see #SherlockTheme_searchViewTextField
+           @see #SherlockTheme_searchViewTextFieldRight
+           @see #SherlockTheme_searchViewVoiceIcon
+           @see #SherlockTheme_selectableItemBackground
+           @see #SherlockTheme_spinnerDropDownItemStyle
+           @see #SherlockTheme_spinnerItemStyle
+           @see #SherlockTheme_textAppearanceLargePopupMenu
+           @see #SherlockTheme_textAppearanceListItemSmall
+           @see #SherlockTheme_textAppearanceSearchResultSubtitle
+           @see #SherlockTheme_textAppearanceSearchResultTitle
+           @see #SherlockTheme_textAppearanceSmall
+           @see #SherlockTheme_textAppearanceSmallPopupMenu
+           @see #SherlockTheme_textColorPrimary
+           @see #SherlockTheme_textColorPrimaryDisableOnly
+           @see #SherlockTheme_textColorPrimaryInverse
+           @see #SherlockTheme_textColorSearchUrl
+           @see #SherlockTheme_windowActionBar
+           @see #SherlockTheme_windowActionBarOverlay
+           @see #SherlockTheme_windowActionModeOverlay
+           @see #SherlockTheme_windowContentOverlay
+           @see #SherlockTheme_windowMinWidthMajor
+           @see #SherlockTheme_windowMinWidthMinor
+           @see #SherlockTheme_windowNoTitle
+           @see #SherlockTheme_windowSplitActionBar
+         */
+        public static final int[] SherlockTheme = {
+            0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031,
+            0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035,
+            0x7f010036, 0x7f010037, 0x7f010038, 0x7f010039,
+            0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d,
+            0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041,
+            0x7f010042, 0x7f010043, 0x7f010044, 0x7f010045,
+            0x7f010046, 0x7f010047, 0x7f010048, 0x7f010049,
+            0x7f01004a, 0x7f01004b, 0x7f01004c, 0x7f01004d,
+            0x7f01004e, 0x7f01004f, 0x7f010050, 0x7f010051,
+            0x7f010052, 0x7f010053, 0x7f010054, 0x7f010055,
+            0x7f010056, 0x7f010057, 0x7f010058, 0x7f010059,
+            0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d,
+            0x7f01005e, 0x7f01005f, 0x7f010060, 0x7f010061,
+            0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065,
+            0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069,
+            0x7f01006a, 0x7f01006b, 0x7f01006c, 0x7f01006d,
+            0x7f01006e, 0x7f01006f, 0x7f010070
+        };
+        /**
+          <p>
+          @attr description
+           Custom divider drawable to use for elements in the action bar. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarDivider
+        */
+        public static final int SherlockTheme_actionBarDivider = 8;
+        /**
+          <p>
+          @attr description
+           Custom item state list drawable background for action bar items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarItemBackground
+        */
+        public static final int SherlockTheme_actionBarItemBackground = 9;
+        /**
+          <p>
+          @attr description
+          
+             Size of the Action Bar, including the contextual
+             bar used to present Action Modes.
+        
+
+
+          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarSize
+        */
+        public static final int SherlockTheme_actionBarSize = 7;
+        /**
+          <p>
+          @attr description
+          
+             Reference to a style for the split Action Bar. This style
+             controls the split component that holds the menu/action
+             buttons. actionBarStyle is still used for the primary
+             bar.
+        
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarSplitStyle
+        */
+        public static final int SherlockTheme_actionBarSplitStyle = 5;
+        /**
+          <p>
+          @attr description
+           Reference to a style for the Action Bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarStyle
+        */
+        public static final int SherlockTheme_actionBarStyle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionBarTabBarStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionBarTabBarStyle
+        */
+        public static final int SherlockTheme_actionBarTabBarStyle = 1;
+        /**
+          <p>
+          @attr description
+           Default style for tabs within an action bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarTabStyle
+        */
+        public static final int SherlockTheme_actionBarTabStyle = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionBarTabTextStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionBarTabTextStyle
+        */
+        public static final int SherlockTheme_actionBarTabTextStyle = 2;
+        /**
+          <p>
+          @attr description
+          
+             Reference to a theme that should be used to inflate widgets
+             and layouts destined for the action bar. Most of the time
+             this will be a reference to the current theme, but when
+             the action bar has a significantly different contrast
+             profile than the rest of the activity the difference
+             can become important. If this is set to @null the current
+             theme will be used.
+        
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionBarWidgetTheme
+        */
+        public static final int SherlockTheme_actionBarWidgetTheme = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionButtonStyle
+        */
+        public static final int SherlockTheme_actionButtonStyle = 52;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionDropDownStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionDropDownStyle
+        */
+        public static final int SherlockTheme_actionDropDownStyle = 51;
+        /**
+          <p>
+          @attr description
+          
+             TextAppearance style that will be applied to text that
+             appears within action menu items.
+        
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionMenuTextAppearance
+        */
+        public static final int SherlockTheme_actionMenuTextAppearance = 10;
+        /**
+          <p>
+          @attr description
+           Color for text that appears within action menu items. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionMenuTextColor
+        */
+        public static final int SherlockTheme_actionMenuTextColor = 11;
+        /**
+          <p>
+          @attr description
+           Background drawable to use for action mode UI 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionModeBackground
+        */
+        public static final int SherlockTheme_actionModeBackground = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionModeCloseButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionModeCloseButtonStyle
+        */
+        public static final int SherlockTheme_actionModeCloseButtonStyle = 13;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the close action mode button 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionModeCloseDrawable
+        */
+        public static final int SherlockTheme_actionModeCloseDrawable = 16;
+        /**
+          <p>
+          @attr description
+           PopupWindow style to use for action modes when showing as a window overlay. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionModePopupWindowStyle
+        */
+        public static final int SherlockTheme_actionModePopupWindowStyle = 18;
+        /**
+          <p>
+          @attr description
+           Drawable to use for the Share action button in WebView selection action modes 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionModeShareDrawable
+        */
+        public static final int SherlockTheme_actionModeShareDrawable = 17;
+        /**
+          <p>
+          @attr description
+           Background drawable to use for action mode UI in the lower split bar 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:actionModeSplitBackground
+        */
+        public static final int SherlockTheme_actionModeSplitBackground = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionModeStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionModeStyle
+        */
+        public static final int SherlockTheme_actionModeStyle = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionOverflowButtonStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionOverflowButtonStyle
+        */
+        public static final int SherlockTheme_actionOverflowButtonStyle = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#actionSpinnerItemStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:actionSpinnerItemStyle
+        */
+        public static final int SherlockTheme_actionSpinnerItemStyle = 57;
+        /**
+          <p>
+          @attr description
+           Drawable used as a background for activated items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:activatedBackgroundIndicator
+        */
+        public static final int SherlockTheme_activatedBackgroundIndicator = 65;
+        /**
+          <p>
+          @attr description
+           Default ActivityChooserView style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:activityChooserViewStyle
+        */
+        public static final int SherlockTheme_activityChooserViewStyle = 64;
+        /**
+          <p>
+          @attr description
+           Small Button style. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:buttonStyleSmall
+        */
+        public static final int SherlockTheme_buttonStyleSmall = 19;
+        /**
+          <p>
+          @attr description
+           Drawable to use for generic vertical dividers. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:dividerVertical
+        */
+        public static final int SherlockTheme_dividerVertical = 50;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#dropDownHintAppearance}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:dropDownHintAppearance
+        */
+        public static final int SherlockTheme_dropDownHintAppearance = 66;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#dropDownListViewStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:dropDownListViewStyle
+        */
+        public static final int SherlockTheme_dropDownListViewStyle = 54;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#dropdownListPreferredItemHeight}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:dropdownListPreferredItemHeight
+        */
+        public static final int SherlockTheme_dropdownListPreferredItemHeight = 56;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#homeAsUpIndicator}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:homeAsUpIndicator
+        */
+        public static final int SherlockTheme_homeAsUpIndicator = 53;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#listPopupWindowStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:listPopupWindowStyle
+        */
+        public static final int SherlockTheme_listPopupWindowStyle = 63;
+        /**
+          <p>
+          @attr description
+           A smaller, sleeker list item height. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:listPreferredItemHeightSmall
+        */
+        public static final int SherlockTheme_listPreferredItemHeightSmall = 44;
+        /**
+          <p>
+          @attr description
+           The preferred padding along the left edge of list items. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:listPreferredItemPaddingLeft
+        */
+        public static final int SherlockTheme_listPreferredItemPaddingLeft = 45;
+        /**
+          <p>
+          @attr description
+           The preferred padding along the right edge of list items. 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:listPreferredItemPaddingRight
+        */
+        public static final int SherlockTheme_listPreferredItemPaddingRight = 46;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#popupMenuStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:popupMenuStyle
+        */
+        public static final int SherlockTheme_popupMenuStyle = 55;
+        /**
+          <p>
+          @attr description
+           SearchView AutoCompleteTextView style 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchAutoCompleteTextView
+        */
+        public static final int SherlockTheme_searchAutoCompleteTextView = 30;
+        /**
+          <p>
+          @attr description
+           SearchView dropdown background 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchDropdownBackground
+        */
+        public static final int SherlockTheme_searchDropdownBackground = 31;
+        /**
+          <p>
+          @attr description
+           The list item height for search results. @hide 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchResultListItemHeight
+        */
+        public static final int SherlockTheme_searchResultListItemHeight = 41;
+        /**
+          <p>
+          @attr description
+           SearchView close button icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewCloseIcon
+        */
+        public static final int SherlockTheme_searchViewCloseIcon = 32;
+        /**
+          <p>
+          @attr description
+           SearchView query refinement icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewEditQuery
+        */
+        public static final int SherlockTheme_searchViewEditQuery = 36;
+        /**
+          <p>
+          @attr description
+           SearchView query refinement icon background 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewEditQueryBackground
+        */
+        public static final int SherlockTheme_searchViewEditQueryBackground = 37;
+        /**
+          <p>
+          @attr description
+           SearchView Go button icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewGoIcon
+        */
+        public static final int SherlockTheme_searchViewGoIcon = 33;
+        /**
+          <p>
+          @attr description
+           SearchView Search icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewSearchIcon
+        */
+        public static final int SherlockTheme_searchViewSearchIcon = 34;
+        /**
+          <p>
+          @attr description
+           SearchView text field background for the left section 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewTextField
+        */
+        public static final int SherlockTheme_searchViewTextField = 38;
+        /**
+          <p>
+          @attr description
+           SearchView text field background for the right section 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewTextFieldRight
+        */
+        public static final int SherlockTheme_searchViewTextFieldRight = 39;
+        /**
+          <p>
+          @attr description
+           SearchView Voice button icon 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:searchViewVoiceIcon
+        */
+        public static final int SherlockTheme_searchViewVoiceIcon = 35;
+        /**
+          <p>
+          @attr description
+           Background drawable for standalone items that need focus/pressed states. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:selectableItemBackground
+        */
+        public static final int SherlockTheme_selectableItemBackground = 20;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#spinnerDropDownItemStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:spinnerDropDownItemStyle
+        */
+        public static final int SherlockTheme_spinnerDropDownItemStyle = 29;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#spinnerItemStyle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:spinnerItemStyle
+        */
+        public static final int SherlockTheme_spinnerItemStyle = 28;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for the text inside of a popup menu. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textAppearanceLargePopupMenu
+        */
+        public static final int SherlockTheme_textAppearanceLargePopupMenu = 22;
+        /**
+          <p>
+          @attr description
+           The preferred TextAppearance for the primary text of small list items. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textAppearanceListItemSmall
+        */
+        public static final int SherlockTheme_textAppearanceListItemSmall = 47;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textAppearanceSearchResultSubtitle
+        */
+        public static final int SherlockTheme_textAppearanceSearchResultSubtitle = 43;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textAppearanceSearchResultTitle
+        */
+        public static final int SherlockTheme_textAppearanceSearchResultTitle = 42;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for "small" text. Defaults to secondary text color. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textAppearanceSmall
+        */
+        public static final int SherlockTheme_textAppearanceSmall = 24;
+        /**
+          <p>
+          @attr description
+           Text color, typeface, size, and style for small text inside of a popup menu. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textAppearanceSmallPopupMenu
+        */
+        public static final int SherlockTheme_textAppearanceSmallPopupMenu = 23;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#textColorPrimary}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:textColorPrimary
+        */
+        public static final int SherlockTheme_textColorPrimary = 25;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#textColorPrimaryDisableOnly}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:textColorPrimaryDisableOnly
+        */
+        public static final int SherlockTheme_textColorPrimaryDisableOnly = 26;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#textColorPrimaryInverse}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:textColorPrimaryInverse
+        */
+        public static final int SherlockTheme_textColorPrimaryInverse = 27;
+        /**
+          <p>
+          @attr description
+           Text color for urls in search suggestions, used by things like global search and the browser. @hide 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:textColorSearchUrl
+        */
+        public static final int SherlockTheme_textColorSearchUrl = 40;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowActionBar}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowActionBar
+        */
+        public static final int SherlockTheme_windowActionBar = 59;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowActionBarOverlay}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowActionBarOverlay
+        */
+        public static final int SherlockTheme_windowActionBarOverlay = 60;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowActionModeOverlay}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowActionModeOverlay
+        */
+        public static final int SherlockTheme_windowActionModeOverlay = 61;
+        /**
+          <p>
+          @attr description
+          
+             This Drawable is overlaid over the foreground of the Window's content area, usually
+             to place a shadow below the title.
+        
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.PPinera.Torrent_Movies:windowContentOverlay
+        */
+        public static final int SherlockTheme_windowContentOverlay = 21;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowMinWidthMajor}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowMinWidthMajor
+        */
+        public static final int SherlockTheme_windowMinWidthMajor = 48;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowMinWidthMinor}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowMinWidthMinor
+        */
+        public static final int SherlockTheme_windowMinWidthMinor = 49;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowNoTitle}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowNoTitle
+        */
+        public static final int SherlockTheme_windowNoTitle = 58;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#windowSplitActionBar}
+          attribute's value can be found in the {@link #SherlockTheme} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:windowSplitActionBar
+        */
+        public static final int SherlockTheme_windowSplitActionBar = 62;
+        /** Attributes that can be used with a SherlockView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SherlockView_android_focusable android:focusable}</code></td><td></td></tr>
+           </table>
+           @see #SherlockView_android_focusable
+         */
+        public static final int[] SherlockView = {
+            0x010100da
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#focusable}
+          attribute's value can be found in the {@link #SherlockView} array.
+          @attr name android:focusable
+        */
+        public static final int SherlockView_android_focusable = 0;
+        /** Attributes that can be used with a SlidingMenu.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SlidingMenu_behindOffset com.PPinera.Torrent_Movies:behindOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindScrollScale com.PPinera.Torrent_Movies:behindScrollScale}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindWidth com.PPinera.Torrent_Movies:behindWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_fadeDegree com.PPinera.Torrent_Movies:fadeDegree}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_fadeEnabled com.PPinera.Torrent_Movies:fadeEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_mode com.PPinera.Torrent_Movies:mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_selectorDrawable com.PPinera.Torrent_Movies:selectorDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_selectorEnabled com.PPinera.Torrent_Movies:selectorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_shadowDrawable com.PPinera.Torrent_Movies:shadowDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_shadowWidth com.PPinera.Torrent_Movies:shadowWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_touchModeAbove com.PPinera.Torrent_Movies:touchModeAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_touchModeBehind com.PPinera.Torrent_Movies:touchModeBehind}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_viewAbove com.PPinera.Torrent_Movies:viewAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_viewBehind com.PPinera.Torrent_Movies:viewBehind}</code></td><td></td></tr>
+           </table>
+           @see #SlidingMenu_behindOffset
+           @see #SlidingMenu_behindScrollScale
+           @see #SlidingMenu_behindWidth
+           @see #SlidingMenu_fadeDegree
+           @see #SlidingMenu_fadeEnabled
+           @see #SlidingMenu_mode
+           @see #SlidingMenu_selectorDrawable
+           @see #SlidingMenu_selectorEnabled
+           @see #SlidingMenu_shadowDrawable
+           @see #SlidingMenu_shadowWidth
+           @see #SlidingMenu_touchModeAbove
+           @see #SlidingMenu_touchModeBehind
+           @see #SlidingMenu_viewAbove
+           @see #SlidingMenu_viewBehind
+         */
+        public static final int[] SlidingMenu = {
+            0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074,
+            0x7f010075, 0x7f010076, 0x7f010077, 0x7f010078,
+            0x7f010079, 0x7f01007a, 0x7f01007b, 0x7f01007c,
+            0x7f01007d, 0x7f01007e
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#behindOffset}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:behindOffset
+        */
+        public static final int SlidingMenu_behindOffset = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#behindScrollScale}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:behindScrollScale
+        */
+        public static final int SlidingMenu_behindScrollScale = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#behindWidth}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:behindWidth
+        */
+        public static final int SlidingMenu_behindWidth = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#fadeDegree}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:fadeDegree
+        */
+        public static final int SlidingMenu_fadeDegree = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#fadeEnabled}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:fadeEnabled
+        */
+        public static final int SlidingMenu_fadeEnabled = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#mode}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.PPinera.Torrent_Movies:mode
+        */
+        public static final int SlidingMenu_mode = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#selectorDrawable}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:selectorDrawable
+        */
+        public static final int SlidingMenu_selectorDrawable = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#selectorEnabled}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:selectorEnabled
+        */
+        public static final int SlidingMenu_selectorEnabled = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#shadowDrawable}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:shadowDrawable
+        */
+        public static final int SlidingMenu_shadowDrawable = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#shadowWidth}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:shadowWidth
+        */
+        public static final int SlidingMenu_shadowWidth = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#touchModeAbove}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.PPinera.Torrent_Movies:touchModeAbove
+        */
+        public static final int SlidingMenu_touchModeAbove = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#touchModeBehind}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.PPinera.Torrent_Movies:touchModeBehind
+        */
+        public static final int SlidingMenu_touchModeBehind = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#viewAbove}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:viewAbove
+        */
+        public static final int SlidingMenu_viewAbove = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#viewBehind}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.PPinera.Torrent_Movies:viewBehind
+        */
+        public static final int SlidingMenu_viewBehind = 2;
+        /** Attributes that can be used with a SlidingPaneLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SlidingPaneLayout_overhangSize com.PPinera.Torrent_Movies:overhangSize}</code></td><td></td></tr>
+           </table>
+           @see #SlidingPaneLayout_overhangSize
+         */
+        public static final int[] SlidingPaneLayout = {
+            0x7f01007f
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.PPinera.Torrent_Movies.R.attr#overhangSize}
+          attribute's value can be found in the {@link #SlidingPaneLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.PPinera.Torrent_Movies:overhangSize
+        */
+        public static final int SlidingPaneLayout_overhangSize = 0;
+    };
 }

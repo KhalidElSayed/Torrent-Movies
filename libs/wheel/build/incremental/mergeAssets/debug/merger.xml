@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/pepibumur/Desktop/Torrent-Movies/libs/wheel/src/debug/assets" />
+    </dataSet>
+
+</merger>

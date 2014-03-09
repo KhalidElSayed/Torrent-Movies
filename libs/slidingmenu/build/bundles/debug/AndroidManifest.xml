@@ -1,0 +1,6 @@
+<!-- From: file:/Users/pepibumur/Desktop/Torrent-Movies/libs/slidingmenu/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.jeremyfeinstein.slidingmenu.lib">
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
+
+</manifest>

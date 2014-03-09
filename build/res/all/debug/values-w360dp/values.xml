@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/pepibumur/Desktop/Torrent-Movies/build/exploded-bundles/TorrentMoviesLibsActionbarsherlockUnspecified.aar/res/values-w360dp/values.xml -->
+    <eat-comment />
+
+    <integer name="abs__max_action_buttons">3</integer>
+
+</resources>
